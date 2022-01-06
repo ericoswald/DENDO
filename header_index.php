@@ -76,7 +76,7 @@
                 <span class="iconify" data-icon="ant-design:close-outlined"></span>
                 <span>FERMER</span>
             </div> -->
-            <div class="header_logo"><img src="./assets/image/main.png" alt=""></div>
+            <a href="./index.php" class="header_logo"><img src="./assets/image/main.png" alt=""></a>
             <div class="header_menu icons_menu">
                 <span class="iconify" data-icon="bi:search"></span>
                 <span class="iconify" data-icon="codicon:account"></span>

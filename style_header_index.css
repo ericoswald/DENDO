@@ -92,6 +92,10 @@ header {
     background-color: #00C9FF;
     color: black;
 }
+#dropdownMenuButton1:hover{
+    background-color: #00C9FF;
+    color: black;
+}
 .dropdown-menu{
     color: white;
     background-color: black;

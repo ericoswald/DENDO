@@ -12,7 +12,9 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
+header{
+  z-index: 4;
+}
 main {
     height: auto;
     width: 100%;
@@ -22,6 +24,7 @@ main {
 .carousel-item img {
     height: auto;
     width: 100vw;
+    z-index: -1;
 
 }
 

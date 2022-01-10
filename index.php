@@ -29,10 +29,12 @@
 </head>
 
 <body class="dark-mode">
+  <header>  <?php include('header_index.php'); ?>
+</header>
 
   <!-- CAROUSEL -->
   <main>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators aaaa">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -84,7 +86,6 @@
     </div>
   </main>
 
-  <?php include('header_index.php'); ?>
   <footer><?php include('footer.php'); ?></footer>
   
 

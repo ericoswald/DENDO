@@ -91,6 +91,7 @@ header {
 #dropdownMenuButton1:focus{
     background-color: #00C9FF;
     color: black;
+    text-decoration: underline;
 }
 #dropdownMenuButton1:hover{
     background-color: #00C9FF;
@@ -111,5 +112,6 @@ header {
     background-color: #00C9FF;
     color: black;
     width: auto;
+    
 
 }

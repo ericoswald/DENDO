@@ -37,7 +37,7 @@
         <div class="carousel-item active">
           <img src="./assets/image/background.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption aaaa d-none d-md-block">
-            <h1>JITENSHA</h1>
+          <div class="titre_animation" title="JITENSHIA">JITENSHIA</div>
             
           </div>
         </div>
@@ -58,6 +58,7 @@
           </div>
         </div>
       </div>
+
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

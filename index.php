@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
-<!-- GOOGLE FONT -->
+  <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-<!-- BOOTSTRAP -->
+  <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -30,19 +30,29 @@
 </head>
 
 <body class="dark-mode">
-  <header>  <?php include('header_index.php'); ?>
-</header>
+  <header> <?php include('header_index.php'); ?>
+  </header>
 
   <!-- CAROUSEL -->
   <main>
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators aaaa">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+          aria-label="Slide 3"></button> -->
+        <?php
+
+        for ($i = 0; $i < 3; $i++) {
+            ?>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?php echo $i; ?>"
+                  <?php if ($i == 0) { ?> class="active" aria-current="true" <?php } ?>
+                  aria-label="Slide <?php echo $i + 1; ?>"></button>
+                <?php
+        }?>
+
       </div>
       <div class="carousel-inner">
 
@@ -88,11 +98,11 @@
   </main>
 
   <footer><?php include('footer.php'); ?></footer>
-  
 
 
 
-<script src="./js/toggle_dark.js"></script>
+
+  <script src="./js/toggle_dark.js"></script>
 </body>
 
 </html>

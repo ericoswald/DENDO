@@ -11,7 +11,11 @@
             <div class="colonne_footer">
                 <h3>Newsletter</h3>
                 <span>Retrouvez l'essentiel de l'actualité en vous inscrivant à la newsletter</span>
-                <div class="newsletter"><span class="iconify" data-icon="ant-design:mail-outlined"></span><input type="email" placeholder="Saisissez votre e-mail"><button>SUBSCRIBE</button> </div>
+                <div class="newsletter">
+                <span class="iconify" data-icon="ant-design:mail-filled"></span>
+                    <input type="email" placeholder="Saisissez votre e-mail">
+                    <button>SUBSCRIBE</button>
+                </div>
             </div>
             <div class="colonne_footer">
                 <h3>Information</h3>
@@ -20,5 +24,5 @@
                 <span class="iconify" id="icon_chat" data-icon="akar-icons:chat-question"></span>
             </div>
         </div>
-        
+
     </footer>

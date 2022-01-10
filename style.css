@@ -1,8 +1,12 @@
+*{
+        font-family: 'Cabin', sans-serif;
+}
+
 body {
     padding: 0px;
     margin: 0px;
     width: 100%;
-    font-family: 'Cabin', sans-serif;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +20,7 @@ main {
 
 .carousel-item img {
     height: auto;
-    width: 100%;
+    width: 100vw;
 
 }
 
@@ -42,22 +46,21 @@ main {
     font-size: 100px;
 }
 .carousel-indicators [data-bs-target]{
-    height: 5px;
+    height: 3px;
     width: 55px;
 }
 
 /* ANIMATION TEXT JITENSHIA */
+
 
 /* 
   body{ 
     
     width: 100vw;
     height: 100vh;
-    
     margin: 0;
     background: #131313;
     color: #fff;
-    
     
    
   } */
@@ -65,7 +68,7 @@ main {
   .titre_animation{
     animation: glitch 2s linear infinite;
     letter-spacing: -6px;
-
+    font-family: 'Fira Mono', monospace;
     font-size: 96px;
     display: flex;
     align-items: center;

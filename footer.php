@@ -1,8 +1,3 @@
-<head>
-    <link rel="stylesheet" href="./style_footer.css" type="text/css" media="all">
-</head>
-
-<body>
     <footer>
         <div class="frst_part">
             <div class="colonne_footer">
@@ -27,6 +22,3 @@
         </div>
         
     </footer>
-</body>
-
-</html>

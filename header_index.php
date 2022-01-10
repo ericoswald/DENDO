@@ -78,6 +78,8 @@
       <a href="./index.php" class="header_logo"><img src="./assets/image/main.png" alt=""></a>
       <div class="header_menu icons_menu">
         
+
+      <!-- DARK MODE LIGHT MODE -->
         <label class="switch">
           <input type="checkbox">
           <span class="slider round"></span>

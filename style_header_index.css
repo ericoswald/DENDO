@@ -1,4 +1,6 @@
-
+:root{
+    --couleur-theme:#00C9FF;
+}
 
 header {
     /* border: 2px solid red; */
@@ -10,6 +12,7 @@ header {
     padding: 0px;
     margin: 0px;
     width: 100%;
+    font-family: 'Cabin', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,14 +89,16 @@ header {
     color: white;
     font-weight: bold;
     font-size: 26px;
+    height: auto;
+    width: auto;
 }
 #dropdownMenuButton1:focus{
-    background-color: #00C9FF;
+    background-color: var(--couleur-theme);
     color: black;
     text-decoration: underline;
 }
 #dropdownMenuButton1:hover{
-    background-color: #00C9FF;
+    background-color: var(--couleur-theme);
     color: black;
 }
 .dropdown-menu{
@@ -108,7 +113,7 @@ header {
 
 }
 .dropdown-item:hover{
-    background-color: #00C9FF;
+    background-color: var(--couleur-theme);
     color: black;
     width: auto;
     

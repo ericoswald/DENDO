@@ -16,7 +16,7 @@
             <div class="colonne_footer">
                 <h3>Newsletter</h3>
                 <span>Retrouvez l'essentiel de l'actualité en vous inscrivant à la newsletter</span>
-                <input type="email" placeholder="Email">
+                <div class="newsletter"><span class="iconify" data-icon="ant-design:mail-outlined"></span><input type="email" placeholder="Saisissez votre e-mail"><button>SUBSCRIBE</button> </div>
             </div>
             <div class="colonne_footer">
                 <h3>Information</h3>

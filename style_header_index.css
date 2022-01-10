@@ -22,7 +22,7 @@ header {
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
-    width: 100%;
+    
     height: 80px;
     color: var(--couleur-noirclair);
     padding: 0px;

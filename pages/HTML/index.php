@@ -22,9 +22,9 @@
   <!-- -------- -->
   <title>Dendo Jitesha</title>
   <link rel="shortcut icon" type="image/x-icon" href="./assets/image/main.png">
-  <link rel="stylesheet" href="style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="./style_header_index.css" type="text/css" media="all">
-  <link rel="stylesheet" href="./style_footer.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../CSS/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../CSS/style_header_index.css" type="text/css" media="all">
+  <link rel="stylesheet" href="../CSS/style_footer.css" type="text/css" media="all">
 
 
 </head>
@@ -57,7 +57,7 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active" data-bs-interval="7000">
-          <img src="./assets/image/background.jpg" class="d-block w-100" alt="...">
+          <img src="../../assets/image/background.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption aaaa d-none d-md-block">
             <div class="titre_animation" title="JITENSHIA">JITENSHIA</div>
 
@@ -65,7 +65,7 @@
         </div>
 
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="./assets/image/background.jpg" class="d-block w-100" alt="...">
+          <img src="../../assets/image/background.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption aaaa d-none d-md-block">
             <h5>Présentation de l’entreprise</h5>
             <p>Jitensha est une entreprise qui fût crée en 1970 par deux personnes.
@@ -76,7 +76,7 @@
         </div>
 
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="./assets/image/background.jpg" class="d-block w-100" alt="...">
+          <img src="../../assets/image/background.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption aaaa d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
@@ -102,7 +102,7 @@
 
 
 
-  <script src="./js/toggle_dark.js"></script>
+  <script src="../JS/toggle_dark.js"></script>
 </body>
 
 </html>

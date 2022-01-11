@@ -11,7 +11,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <link rel="stylesheet" href="./style_header.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../CSS/style_header.css" type="text/css" media="all">
     <title>Document</title>
 
 </head>
@@ -93,7 +93,7 @@
                 <span class="iconify" data-icon="ant-design:close-outlined"></span>
                 <span>FERMER</span>
             </div> -->
-            <div class="header_logo"><img src="./assets/image/logo.png" alt=""></div>
+            <div class="header_logo"><img src="../../assets/image/logo.png" alt=""></div>
             <div class="header_menu">
                 <span class="iconify" data-icon="bi:search"></span>
                 <span class="iconify" data-icon="codicon:account"></span>

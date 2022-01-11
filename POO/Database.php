@@ -20,23 +20,23 @@ class Database
     }
 
     private function getPDO(){
-    $pdo = new PDO('mysql:host=localhost;dbname=dendo', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $this->pdo =$pdo;
+        if ($this->pdo === null){
+            $pdo = new PDO('mysql:host=localhost;dbname=dendo', 'root', '');
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdo =$pdo;
+        }
+
+    return $this->pdo;
     }
 
     public function query($requ){
-        $resu =$this->getPDO()->query('SELECT * FROM utilisateur');
+        $resu =$this->getPDO()->query($requ);
+        $donnee = $resu->fetchAll(PDO::FETCH_OBJ);
+        return $donnee;
     }
 
 
-    /**
-     * @return mixed
-     */
-    public function getPdo()
-    {
-        return $this->pdo;
-    }
+
 
     /**
      * @param mixed $pdo

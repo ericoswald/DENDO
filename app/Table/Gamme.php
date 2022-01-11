@@ -1,9 +1,13 @@
 <?php
 
 namespace App\Table;
-class Gamme
+use App\App;
+class Gamme extends Table
 {
-    public function getName(){
-        return $this->nom;
+    protected static $table = 'gamme';
+    public static function getGamme(){
+        return App::getDb()->query('SELECT * FROM gamme ', __CLASS__);
     }
+
+
 }

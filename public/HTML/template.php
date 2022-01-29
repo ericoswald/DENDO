@@ -40,9 +40,6 @@
 // FOOTER
    include('footer.php'); ?>
 
-
-
-
   <script src="/DENDO/public/JS/toggle_dark.js"></script>
 </body>
 

@@ -1,0 +1,60 @@
+/* button slider */
+
+button.carousel_velo, button.carousel_velo_fin {
+    text-indent: 0 !important;
+    margin-bottom: 100px;
+    background-clip: border-box !important;
+    border-bottom: 28px solid transparent !important;
+    background-color: transparent !important;
+    opacity: 2 !important;
+    color: white;
+}
+
+button.active.carousel_velo {
+    background-color: #00C9FF !important;
+    color: #373737;
+}
+
+
+button.carousel_velo_fin {
+    margin-bottom: 0;
+}
+
+button.active.carousel_velo_fin {
+    text-indent: 0;
+    background-color: #00C9FF !important;
+    color: #373737;
+
+}
+
+.carousel_1 {
+    margin-bottom: 31%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
+
+
+/* image de fond slider */
+.carousel-item .carousel_taille_image {
+
+    z-index: -1;
+    object-fit: cover;
+    -webkit-filter: brightness(70%);
+
+}
+
+
+/* flèche prev et next sur le carousel */
+
+.carousel_control1 {
+    top: 80% !important;
+    margin-left: 42%;
+    width: 8%;
+}
+
+.carousel_control2 {
+    top: 80% !important;
+    margin-right: 44%;
+    width: 8%;
+}

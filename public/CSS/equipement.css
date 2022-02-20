@@ -108,3 +108,26 @@ input[type="radio"].demo3.equipement_conteneur_equip2:checked + label {
     font-weight: bold;
     margin: 20px 0 20px 0;
 }
+
+
+@media only screen and (max-width: 800px){
+    /* titre et image de fond*/
+
+    .equipement_img{
+        height: 64vw;
+    }
+
+    .equipement_titre{
+        margin-top: -40px;
+        font-size: 50px;
+    }
+
+    /* Description de l'équipement */
+
+    .equipement_description{
+        padding: 0 7%;
+    }
+
+
+
+}

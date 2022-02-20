@@ -137,17 +137,30 @@ input[type="radio"].demo2.produit_conteneur_roue2:checked + label {
 .produit_acheter{
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    background-color: #373737;
+    padding: 20px 0 20px 0;
 }
 
 .produit_bouton_acheter{
-
     width:auto;
     background-color: #00C9FF;
     padding: 10px 25px;
     font-size: 20px;
     color: #373737;
     font-weight: bold;
-    margin: 20px 0 20px 0;
+    margin-right: 20px;
+    
+}
+
+.produit_prix{
+    font-size: 20px;
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    border: 1px solid gray;
+
+
 }
 
 /* fond blanc */
@@ -239,7 +252,9 @@ input[type="radio"].demo2.produit_conteneur_roue2:checked + label {
 
 /* Spécification concernant les spécification */
 
-
+#produit_d3{
+    margin-left: 3vw;
+}
 
 
 .conteneur_produit_specification{
@@ -247,3 +262,61 @@ input[type="radio"].demo2.produit_conteneur_roue2:checked + label {
 
     margin: 30px 0 0 30vw;
 }
+
+.produit_specification_cadre{
+    margin-right: 30px;
+}
+
+
+@media only screen and (max-width: 1100px){
+
+    /* Description du produit */
+
+    .produit_description{
+        padding: 0 7%;
+    }
+
+
+    /* En dessous de Technologies et spécifications */
+
+    .produit_espace_option{
+        margin: 0 0 0 4%;
+        font-size: 16px;
+    }
+
+    #produit_d1{
+        margin: 50px 0 0 4vw;
+        position: relative;
+        font-size: 13px;
+    }
+
+
+    .conteneur_produit_cadre{
+        margin: 0 15px 0 20%;
+        font-size: 14px;
+
+    }
+
+    #produit_d3{
+        margin-left: 1vw;
+    }
+    .conteneur_produit_specification{
+        margin: 20px 0 0 2vw;
+    }
+
+    .produit_logo_velo{
+        margin-right: 20px;
+        width: 24%;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+
+    .conteneur_produit_cadre{
+        margin: 0 15px 0 45%;
+        font-size: 14px;
+    }
+
+}
+

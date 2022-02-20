@@ -67,6 +67,7 @@
             <div class="produit_acheter">
                 <input type="hidden">
                 <input class="produit_bouton_acheter" type="submit" value="Acheter">
+                <div class="produit_prix">1122€</div>
             </div>
         </div>
 
@@ -156,14 +157,15 @@
 
             <div class="conteneur_produit_specification">
                 <div id="produit_d3">
-                    <img src="../assets/image/logo_velo.png" alt="velo">
+                    <img class="produit_logo_velo" src="../assets/image/logo_velo.png" alt="velo">
 
                     <div class="produit_specification_cadre">
-                        <div>CADRE</div>
                         <div>TAILLE DE CADRE</div>
+                        <div>COULEUR</div>
                     </div>
                     <div class="produit_taille_de_cadre">
                         <div>S,M,L,XL,XXL</div>
+                        <div>Rouge et blanc</div>
                     </div>
                 </div>
 

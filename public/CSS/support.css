@@ -1,0 +1,29 @@
+.support_img{
+    background-image: url("../assets/image/support.png");
+    height: 48vw;
+    width: 100%;
+    background-size: cover;
+    position: relative
+}
+
+.support_titre{
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin-top: -70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.support_conteneur1{
+    background-color: #373737;
+    color:white;
+    padding: 3vh 0 0 0;
+}
+
+/* Descrition de l'équipement*/
+
+.support_description{
+    padding: 0 34%;
+}

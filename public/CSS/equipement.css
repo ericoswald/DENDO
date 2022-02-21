@@ -1,0 +1,133 @@
+.equipement_img{
+    background: url("../assets/image/equipement.png");
+    height: 48vw;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+/* titre de page */
+
+.equipement_titre{
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    margin-top: -70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Partie en gris */
+
+.equipement_conteneur1{
+    background-color: #373737;
+    color:white;
+    padding: 3vh 0 0 0;
+}
+
+/* Descrition de l'équipement*/
+
+.equipement_description{
+    padding: 0 34%;
+}
+
+/* titre des choix */
+
+.equipement_titre_choix{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top:100px;
+    text-transform: uppercase;
+
+}
+
+/* bouton de choix */
+
+.equipement_selection_genre, .equipement_selection_genre{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+input[type="radio"].demo3 {
+    display: none;
+}
+input[type="radio"].demo3 + label {
+    padding: 10px 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    border: 1px solid gray;
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+    margin: 20px 5% 0 5%;
+    cursor: pointer;
+}
+input[type="radio"].demo3.equipement_conteneur_equip:hover + label {
+    background-color: #00C9FF;
+    color: #373737;
+    border: 1px solid #00C9FF;
+
+}
+input[type="radio"].demo3.equipement_conteneur_equip:checked + label {
+    background-color: #00C9FF;
+    color: #373737;
+    border: 1px solid #00C9FF;
+
+}
+input[type="radio"].demo3.equipement_conteneur_equip2:hover + label {
+    background-color: #00C9FF;
+    color: #373737;
+    border: 1px solid #00C9FF;
+
+}
+input[type="radio"].demo3.equipement_conteneur_equip2:checked + label {
+    background-color: #00C9FF;
+    color: #373737;
+    border: 1px solid #00C9FF;
+
+}
+
+/* bouton pour chercher casque */
+
+.equipement_chercher{
+    display: flex;
+    justify-content: center;
+}
+
+.equipement_bouton_chercher{
+    width:auto;
+    background-color: #00C9FF;
+    padding: 10px 25px;
+    font-size: 20px;
+    color: #373737;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
+
+
+@media only screen and (max-width: 800px){
+    /* titre et image de fond*/
+
+    .equipement_img{
+        height: 64vw;
+    }
+
+    .equipement_titre{
+        margin-top: -40px;
+        font-size: 50px;
+    }
+
+    /* Description de l'équipement */
+
+    .equipement_description{
+        padding: 0 7%;
+    }
+
+
+
+}

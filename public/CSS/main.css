@@ -1,9 +1,9 @@
 @import "style_footer.css";
-@import "style_header_index.css";
+@import "style_login.css"; /* header =background white*/
+@import "style_header_index.css"; /* header =background transparent*/
 @import "style.css";
 @import "produit.css";
 @import "equipement.css";
 @import "support.css";
 @import "carousel_velo.css";
-@import "style_login.css";
 

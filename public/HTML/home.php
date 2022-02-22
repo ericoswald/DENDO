@@ -24,6 +24,7 @@
   <title>Dendo Jitesha</title>
   <link rel="shortcut icon" type="image/x-icon" href="../assets/image/Main.png">
   <link rel="stylesheet" href="/DENDO/public/CSS/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/DENDO/public/CSS/style_header_index.css" type="text/css" media="all">
 
 
 </head>

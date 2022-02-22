@@ -1,0 +1,235 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+margin-top: 200px;
+    font-family: 'Cabin', sans-serif;
+    background-color: #373737;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+header {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header_logo img {
+    width: 80px;
+}
+
+.header .iconify {
+    width: 30px;
+    height: auto;
+}
+
+.header_close {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu {
+    /* border: 2px solid green; */
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_connexion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    font-size: 25px;
+    align-self: center;
+     /*border:  1px solid red;*/
+
+}
+.form_inscription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    font-size: 25px;
+    align-self: center;
+    /*border:  1px solid red;*/
+
+}
+
+.body_menu {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    align-content: center;
+    /* border: 2px solid red; */
+
+
+
+}
+
+.select {
+    color: black;
+    background-color: #00C9FF;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 10px 0px 10px;
+    margin: 30px;
+
+}
+
+.sousmenu {
+    /* border: 2px solid red; */
+    height: 40px;
+    display: flex;
+
+    margin-top: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+    color: #969696;
+}
+
+.login {
+    margin-top: 40px;
+    width: 500px;
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user_pass {
+    /* border: 3px solid red; */
+    background-color: #ababab;
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-around;
+}
+
+.user_pass .iconify {
+    height: auto;
+    width: 50px;
+    padding-right: 25px;
+    border-right: 1px solid white;
+}
+
+input {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+
+input[type=text],
+input[type=password] {
+    background-color: #ababab;
+
+
+    /* width: 100%; */
+    padding: 12px 20px;
+    color: #373737;
+    font-size: 20px;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #00C9FF;
+    color: black;
+    font-weight: bold;
+    padding: 14px 20px;
+    /* margin: 8px 0; */
+    border: 0px;
+    cursor: pointer;
+    width: 100%;
+    animation: 5s;
+
+}
+
+input[type=submit]:hover {
+    background-color: #373737;
+    color: #00C9FF;
+    border: 2px solid #00C9FF;
+    animation: s;
+}
+
+.email {
+    background-color: #ababab;
+    border: 0px;
+    font-size: 20px;
+}
+
+.alert {
+    color: red;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.succe_connexion {
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.button_deconnexion {
+    border: 1px solid white;
+    padding: 10px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.button_deconnexion:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 150px;
+}
+
+.captcha {
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}

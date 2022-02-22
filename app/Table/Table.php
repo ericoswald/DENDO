@@ -38,6 +38,6 @@ class Table
 
 
     public static  function test(){
-        var_dump(self::findById(2));
+//        var_dump(self::findById(2));
     }
 }

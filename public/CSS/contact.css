@@ -1,0 +1,93 @@
+#map {
+    height: 400px;
+    width:40%;
+    z-index: 0;
+
+}
+
+
+
+
+.contact_background_linear{
+    background: linear-gradient(180deg, #373737 0%, rgba(255, 255, 255, 0) 0.01%, #373737 90.1%);
+    height: 25vh;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+}
+
+.contact_titre{
+    color: white;
+    font-size: 80px;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    margin-left: -100px;
+
+}
+
+
+
+
+.contact_conteneur{
+    display: flex;
+    background-color: #373737 ;
+    justify-content: center;
+    padding: 45px 0 45px 0;
+
+
+}
+
+
+
+/* formulaire de contact */
+.contact_form{
+    margin-left:30px;
+
+}
+
+.contact_form_titre{
+    color: white;
+    font-weight: bold;
+    font-size:30px;
+    margin-bottom: 20px;
+}
+
+.contact_espace_form{
+    border: 1px solid white !important;
+    margin-bottom: 15px;
+    background-color: transparent !important;
+    padding: 0 0 0 10px!important;
+    width: 170%;
+    color: white !important;
+    text-align: start !important;
+    font-size: 20px !important;
+
+}
+
+.contact_espace_form::placeholder{
+    color: white;
+    margin-left: 10px;
+}
+
+
+#contact_message{
+    width: 170%;
+    height: 100px;
+}
+
+
+.contact_bouton_envoyer{
+    border: 1px solid white !important;
+    background-color: transparent !important;
+    color: white !important;
+    text-align: center!important;
+    width: 60% !important;
+    margin-top: 10px;
+}
+
+.contact_bouton_envoyer:hover{
+    background-color: white !important;
+    color: #373737 !important;
+
+}

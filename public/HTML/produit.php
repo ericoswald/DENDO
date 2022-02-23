@@ -22,13 +22,12 @@
     <!-- -------- -->
     <title>Dendo Jitesha</title>
     <link rel="shortcut icon" type="image/x-icon" href="../assets/image/Main.png">
-    <link rel="stylesheet" href="../CSS/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/DENDO/public/CSS/main.css" type="text/css" media="all">
 
 </head>
 
 <body class="dark-mode">
-<header> <?php include('header_index.php'); ?>
-</header>
+
 
 <!-- CAROUSEL -->
 <main>
@@ -61,7 +60,7 @@
                 <label for="taille_roue2" class="produit_roue_2">29''</label>
             </div>
 
-            <div class="produit_velo"><img class="produit_taille_velo" src="../assets/image/velo1.png" alt="velo"/>
+            <div class="produit_velo"><img class="produit_taille_velo" src="/DENDO/public/assets/image/velo1.png" alt="velo"/>
             </div>
 
             <div class="produit_acheter">
@@ -157,7 +156,7 @@
 
             <div class="conteneur_produit_specification">
                 <div id="produit_d3">
-                    <img class="produit_logo_velo" src="../assets/image/logo_velo.png" alt="velo">
+                    <img class="produit_logo_velo" src="/DENDO/public/assets/image/logo_velo.png" alt="velo">
 
                     <div class="produit_specification_cadre">
                         <div>TAILLE DE CADRE</div>
@@ -179,10 +178,10 @@
 
 </main>
 
-<footer><?php include('footer.php'); ?></footer>
 
 
-<script src="../JS/toggle_produit.js"></script>
+
+<script src="/DENDO/public/JS/toggle_produit.js"></script>
 
 </body>
 

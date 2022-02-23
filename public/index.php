@@ -28,6 +28,12 @@ if ($p === 'home') {
     if ($p=== 'register'){
         require '../public/assets/loginCapchat/register/register.php';
     }
+    if ($p === 'contact') {
+        require './HTML/contact.php';
+    }
+    if ($p === 'produit') {
+        require './HTML/produit.php';
+    }
 
     $content = ob_get_clean();
     require '../public/HTML/template.php';

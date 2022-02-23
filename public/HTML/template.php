@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="dark-mode">
+<body  class="dark-mode background_grey">
 <?php
   // HEADER
  include('header.php');

@@ -84,6 +84,8 @@
     text-align: center!important;
     width: 60% !important;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact_bouton_envoyer:hover{
@@ -91,3 +93,72 @@
     color: #373737 !important;
 
 }
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .contact_titre{
+        margin-left: 0;
+
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    .contact_form_titre{
+        margin-top:40px
+    }
+
+
+
+
+    .contact_conteneur{
+        flex-direction: column;
+
+    }
+
+
+
+    /* formulaire de contact */
+
+    .contact_espace_form{
+        width: 50%;
+    }
+
+
+    #contact_message{
+        width: 50%;
+    }
+
+    .contact_bouton_envoyer{
+        width: 17% !important;
+        font-size: 20px !important;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .contact_espace_form{
+        width: 90%;
+    }
+
+
+    #contact_message{
+        width: 90%;
+    }
+
+    .contact_bouton_envoyer{
+        width: 20% !important;
+        font-size: 15px !important;
+    }
+
+}
+
+
+

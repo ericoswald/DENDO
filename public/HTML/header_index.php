@@ -75,7 +75,7 @@
                 <span class="iconify" data-icon="ant-design:close-outlined"></span>
                 <span>FERMER</span>
             </div> -->
-      <a href="home.php" class="header_logo"><img src="./assets/image/Main.png" alt=""></a>
+      <a href="/DENDO/public/home" class="header_logo"><img src="./assets/image/Main.png" alt=""></a>
       <div class="header_menu icons_menu">
         
 

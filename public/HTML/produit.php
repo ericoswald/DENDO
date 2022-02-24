@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <!-- TODO: la balise HEAD est la même dans tous ces fichiers PHP ? Pourquoi ne pas inclure un fichier head.php pour factoriser le tout ?
+    pour les choses variables, utiliser des variables php (ex. $title)
+    -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -21,7 +21,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
   <!-- -------- -->
-  <title>Dendo Jitesha</title>
+  <title><?php echo $title;?></title>
   <link rel="shortcut icon" type="image/x-icon" href="../assets/image/Main.png">
   <link rel="stylesheet" href="/DENDO/public/CSS/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="/DENDO/public/CSS/style_header.css" type="text/css" media="all">
@@ -33,9 +33,11 @@
 <?php
   // HEADER
  include('header.php');
-
- echo $content;
-
+ ?>
+<main>
+<?php include($mainTemplate); ?>
+</main>
+<?php
 // FOOTER
    include('footer.php'); ?>
 

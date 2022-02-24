@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Dendo.iml" filepath="$PROJECT_DIR$/.idea/Dendo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dendoinitiaux.iml" filepath="$PROJECT_DIR$/.idea/dendoinitiaux.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="../CSS/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="../../public/CSS/main.css" type="text/css" media="all">
 </head>
 
 <body class="dark-mode">
@@ -53,7 +53,7 @@
 
 
 
-<script src="../JS/toggle_produit.js"></script>
+<script src="../../public/JS/toggle_produit.js"></script>
 
 </body>
 

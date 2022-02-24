@@ -23,6 +23,14 @@ if (isset($_GET['p'])) {
 // 2. Ne pas placer vos fichiers PHP dans HTML, mais dans app
 
 $frontController = new \App\Controller\FrontController();
+if (method_exists($frontController, $p)) {
+    $content = $frontController->$p();
+    echo $content;
+    exit;
+}
+
+
+
 
 if ($p === 'home') {
     //$content = $frontController->home();

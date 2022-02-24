@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link href="../../../CSS/style_login.css" rel="stylesheet">
+    <link href="../../../../public/CSS/style_login.css" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin&family=Roboto+Condensed:ital@1&display=swap"
           rel="stylesheet">

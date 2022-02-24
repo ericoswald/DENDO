@@ -21,8 +21,8 @@
     </script>
     <!-- -------- -->
     <title>Dendo Jitesha</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/image/Main.png">
-    <link rel="stylesheet" href="../CSS/main.css" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/assets/image/Main.png">
+    <link rel="stylesheet" href="../../public/CSS/main.css" type="text/css" media="all">
 
 </head>
 
@@ -46,14 +46,14 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active" data-bs-interval="7000000">
-                <img  src="../assets/image/vtt.png" class="d-block w-100 carousel_taille_image" alt="...">
+                <img src="../../public/assets/image/vtt.png" class="d-block w-100 carousel_taille_image" alt="...">
 
 
 
             </div>
 
             <div class="carousel-item" data-bs-interval="5000000">
-                <img  src="../assets/image/route.png" class="d-block w-100 carousel_taille_image" alt="...">
+                <img src="../../public/assets/image/route.png" class="d-block w-100 carousel_taille_image" alt="...">
                 <div class="carousel-caption aaaa d-none d-md-block">
                     <h5>Présentation de l’entreprise</h5>
                     <p>Jitensha est une entreprise qui fût crée en 1970 par deux personnes.
@@ -64,7 +64,7 @@
             </div>
 
             <div class="carousel-item" data-bs-interval="5000000">
-                <img  src="../assets/image/background.jpg" class="d-block w-100 carousel_taille_image" alt="...">
+                <img src="../../public/assets/image/background.jpg" class="d-block w-100 carousel_taille_image" alt="...">
                 <div class="carousel-caption aaaa d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>

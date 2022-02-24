@@ -21,8 +21,8 @@
     </script>
     <!-- -------- -->
     <title>Dendo Jitesha</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/image/Main.png">
-    <link rel="stylesheet" href="../CSS/main.css" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/assets/image/Main.png">
+    <link rel="stylesheet" href="../../public/CSS/main.css" type="text/css" media="all">
 
 
 </head>

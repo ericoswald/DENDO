@@ -11,13 +11,13 @@
 
 
         <div class="sousmenu">
-            <div class="sousmenu_login "><a href="./login.php">Connexion</a></div>
+            <div class="sousmenu_login "><a href="login.php">Connexion</a></div>
             <div class="sousmenu_register select"><a href="register.php">Inscription</a></div>
         </div>
 
         <div class="login">
 
-            <form action="./inscription_verif.php" method="post">
+            <form action="inscription_verif.php" method="post">
                 <div class="pseudo user_pass">
                     <span class="iconify" data-icon="codicon:account"></span>
 

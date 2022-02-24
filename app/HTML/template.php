@@ -22,9 +22,9 @@
   </script>
   <!-- -------- -->
   <title><?php echo $title;?></title>
-  <link rel="shortcut icon" type="image/x-icon" href="../assets/image/Main.png">
-  <link rel="stylesheet" href="/DENDO/public/CSS/main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="/DENDO/public/CSS/style_header.css" type="text/css" media="all">
+  <link rel="shortcut icon" type="image/x-icon" href="../../public/assets/image/Main.png">
+  <link rel="stylesheet" href="<?= ROOT_URL?>/public/CSS/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= ROOT_URL?>/public/CSS/style_header.css" type="text/css" media="all">
 
 
 </head>
@@ -32,7 +32,7 @@
 <body  class="dark-mode background_grey">
 <?php
   // HEADER
- include('header.php');
+ include($header);
  ?>
 <main>
 <?php include($mainTemplate); ?>
@@ -41,7 +41,10 @@
 // FOOTER
    include('footer.php'); ?>
 
-  <script src="/DENDO/public/JS/toggle_dark.js"></script>
+  <script src="<?= ROOT_URL?>/public/JS/toggle_dark.js"></script>
+  <script src="<?= ROOT_URL?>/public/JS/toggle_produit.js"></script>
+  <script src="<?= ROOT_URL?>/public/JS/leaflet.js"></script>
+  <script src="<?= ROOT_URL?>/public/JS/toggle_carousel.js"></script>
 </body>
 
 </html>

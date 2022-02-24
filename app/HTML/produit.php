@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <!-- TODO: la balise HEAD est la même dans tous ces fichiers PHP ? Pourquoi ne pas inclure un fichier head.php pour factoriser le tout ?
-    pour les choses variables, utiliser des variables php (ex. $title)
-    -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <!-- -------- -->
-    <title>Dendo Jitesha</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/image/Main.png">
-    <link rel="stylesheet" href="/DENDO/public/CSS/main.css" type="text/css" media="all">
-
-</head>
-
-<body class="dark-mode">
-
-
-<!-- CAROUSEL -->
 <main>
     <form action="" method="POST" class="form_produit_acheter">
 
@@ -63,7 +29,7 @@
                 <label for="taille_roue2" class="produit_roue_2">29''</label>
             </div>
 
-            <div class="produit_velo"><img class="produit_taille_velo" src="/DENDO/public/assets/image/velo1.png" alt="velo"/>
+            <div class="produit_velo"><img class="produit_taille_velo" src="/public/assets/image/velo1.png" alt="velo"/>
             </div>
 
             <div class="produit_acheter">
@@ -159,7 +125,7 @@
 
             <div class="conteneur_produit_specification">
                 <div id="produit_d3">
-                    <img class="produit_logo_velo" src="/DENDO/public/assets/image/logo_velo.png" alt="velo">
+                    <img class="produit_logo_velo" src="/public/assets/image/logo_velo.png" alt="velo">
 
                     <div class="produit_specification_cadre">
                         <div>TAILLE DE CADRE</div>
@@ -182,10 +148,3 @@
 </main>
 
 
-
-
-<script src="/DENDO/public/JS/toggle_produit.js"></script>
-
-</body>
-
-</html>

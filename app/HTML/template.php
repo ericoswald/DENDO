@@ -24,7 +24,7 @@
   <title><?php echo $title;?></title>
   <link rel="shortcut icon" type="image/x-icon" href="../../public/assets/image/Main.png">
   <link rel="stylesheet" href="<?= ROOT_URL?>/public/CSS/main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="<?= ROOT_URL?>/public/CSS/style_header.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= $style_header?>" type="text/css" media="all">
 
 
 </head>

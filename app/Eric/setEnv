@@ -1,0 +1,4 @@
+<?php
+
+define('ROOT_PROJECT', 'C:\wamp64\www\DENDO');
+define('ROOT_URL', 'http://localhost/DENDO');

@@ -57,7 +57,7 @@ if ($p === 'home') {
         require '../public/assets/loginCapchat/register/register.php';
     }
     if ($p === 'contact') {
-        require './HTML/contact.php';
+        require './HTML/contayyyct.php';
     }
     if ($p === 'produit') {
         require './HTML/produit.php';

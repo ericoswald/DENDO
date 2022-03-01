@@ -1,4 +1,4 @@
-  <header>
+<header>
     <div class="header">
       <div class="header_menu">
         <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
@@ -20,10 +20,8 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">VELOS</a></li>
-                <li><a class="dropdown-item" href="#">E-VELOS</a></li>
-                <li><a class="dropdown-item" href="#">OCCASION - DESTOCKAGE</a></li>
                 <li><a class="dropdown-item" href="#">EQUIPEMENT</a></li>
-                <li><a class="dropdown-item" href="#">COMPOSANT ET ACCESSOIRE</a></li>
+                <li><a class="dropdown-item" href="#">COMPOSANT ET ACCESSOIRE**</a></li>
               </ul>
             </div>
             <div class="dropdown">
@@ -33,20 +31,17 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">SUPPORT</a></li>
-                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                <li><a class="dropdown-item" href="#">FAQ*</a></li>
                 <li><a class="dropdown-item" href="#">PAIEMENT ET EXPEDITION</a></li>
-                <li><a class="dropdown-item" href="#">INFORMATIONS</a></li>
                 <li><a class="dropdown-item" href="#">CONTACT</a></li>
-                <li><a class="dropdown-item" href="#">TCHAT</a></li>
               </ul>
             </div>
             <div class="dropdown">
               <button class="btn  " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                JITENSHA
+                JITENSHA**
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">A PROPOS</a></li>
                 <li><a class="dropdown-item" href="#">TECHNOLOGIE</a></li>
                 <li><a class="dropdown-item" href="#">TEMOIGNAGE</a></li>
                 <li><a class="dropdown-item" href="#">PRESSE</a></li>
@@ -59,11 +54,9 @@
                 MON COMPTE
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Velos</a></li>
-                <li><a class="dropdown-item" href="#">E-Velos</a></li>
-                <li><a class="dropdown-item" href="#">Ocasion - Destockage</a></li>
-                <li><a class="dropdown-item" href="#">Equipement</a></li>
-                <li><a class="dropdown-item" href="#">Composant accessoire</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Deconnexion</a></li>
+            
               </ul>
             </div>
 

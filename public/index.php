@@ -1,19 +1,18 @@
 <?php
 require '../app/Autoloader.php';
+require 'vendor/autoload.php';
+
 \App\Autoloader::register();
 
 include('./../setEnv.php');
 
-//TODO ne pas utiliser directement les variables $_GET/$_POST (nettoyage  des données, validation si nécessaire)
 if (isset($_GET['p'])) {
-    $p = $_GET['p'];
+    $p = htmlspecialchars($_GET['p']);
 } else {
     $p = 'home';
 }
 
-//if ($p=== 'register'){
-//    require '../public/assets/loginCapchat/register/register.php';
-//}
+
 
 //TODO
 // 1. refactoriser pour éviter la succession de if. Deux possibilités :
@@ -32,38 +31,5 @@ if (method_exists($frontController, $p)) {
 
 
 
-if ($p === 'home') {
-    //$content = $frontController->home();
-    if (method_exists($frontController, $p)) {
-        $content = $frontController->$p();
-    }
-    
 
-    echo $content;
-    //require '../public/HTML/template.php';
-    exit();
-} else {
-    ob_start();
-    if ($p === 'lien') {
-        require './HTML/lien.php';
-    }
-    if ($p === 'test') {
-        require './HTML/test.php';
-    }
-    if ($p=== 'equipement'){
-        require './HTML/equipement.php';
-    }
-    if ($p=== 'register'){
-        require '../public/assets/loginCapchat/register/register.php';
-    }
-    if ($p === 'contact') {
-        require './HTML/contayyyct.php';
-    }
-    if ($p === 'produit') {
-        require './HTML/produit.php';
-    }
-
-    $content = ob_get_clean();
-    require '../public/HTML/template.php';
-}
 

@@ -20,7 +20,7 @@
                               PRODUITS
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">VELOS</a></li>
+                              <li><a class="dropdown-item" href="">VELOS</a></li>
                               <li><a class="dropdown-item" href="#">E-VELOS</a></li>
                               <li><a class="dropdown-item" href="#">OCCASION - DESTOCKAGE</a></li>
                               <li><a class="dropdown-item" href="#">EQUIPEMENT</a></li>

@@ -23,7 +23,7 @@
   <!-- -------- -->
   <title><?php echo $title;?></title>
   <link rel="shortcut icon" type="image/x-icon" href="../../public/assets/image/Main.png">
-  <link rel="stylesheet" href="<?= ROOT_URL?>/public/CSS/main.css" type="text/css" media="all">
+  <link rel="stylesheet" href="<?= ROOT_URL?>/CSS/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?= $style_header?>" type="text/css" media="all">
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -49,11 +49,11 @@
 // FOOTER
    include('footer.php'); ?>
 
-  <script src="<?= ROOT_URL?>/public/JS/toggle_dark.js"></script>
-  <script src="<?= ROOT_URL?>/public/JS/toggle_produit.js"></script>
-  <script src="<?= ROOT_URL?>/public/JS/leaflet.js"></script>
+  <script src="<?= ROOT_URL?>/JS/toggle_dark.js"></script>
+  <script src="<?= ROOT_URL?>/JS/toggle_produit.js"></script>
+  <script src="<?= ROOT_URL?>/JS/leaflet.js"></script>
 
-  <script src="<?= ROOT_URL?>/public/JS/toggle_carousel.js"></script>
+  <script src="<?= ROOT_URL?>/JS/toggle_carousel.js"></script>
 </body>
 
 </html>

@@ -19,8 +19,8 @@
                 PRODUITS
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">VELOS</a></li>
-                <li><a class="dropdown-item" href="#">EQUIPEMENT</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>/carousel_velo">VELOS</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>/produit">EQUIPEMENT</a></li>
                 <li><a class="dropdown-item" href="#">COMPOSANT ET ACCESSOIRE**</a></li>
               </ul>
             </div>
@@ -30,10 +30,10 @@
                 SERVICE
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">SUPPORT</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>/support">SUPPORT</a></li>
                 <li><a class="dropdown-item" href="#">FAQ*</a></li>
                 <li><a class="dropdown-item" href="#">PAIEMENT ET EXPEDITION</a></li>
-                <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>/contact">CONTACT</a></li>
               </ul>
             </div>
             <div class="dropdown">

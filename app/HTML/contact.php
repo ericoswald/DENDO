@@ -27,9 +27,7 @@
 
                 <textarea id="contact_message" name="message" placeholder="Message" required></textarea>
 
-                <?php
-                require_once ""
-                ?>
+
                 <input class="contact_bouton_envoyer" type="submit" onclick="" value="Envoyer">
 
 

@@ -18,7 +18,7 @@ function init(){
     }).addTo(map);
 
     L.marker([48.574325664280195, 7.7633843209987825]).addTo(map)
-        .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        .bindPopup('16 Rue du Bass. d\'Austerlitz, 67100 Strasbourg\n')
         .openPopup();
 
 

@@ -1,60 +1,185 @@
 /* button slider */
 
-button.carousel_velo, button.carousel_velo_fin {
-    text-indent: 0 !important;
-    margin-bottom: 100px;
-    background-clip: border-box !important;
-    border-bottom: 28px solid transparent !important;
-    background-color: transparent !important;
-    opacity: 2 !important;
+.brackground_linear_gradient2{
+    background: linear-gradient(180deg, #373737 0%, rgba(255, 255, 255, 0) 0.01%, #373737 90.1%);
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+
+/*titre de la page produit */
+
+
+.titre_carousel{
+    color: white;
+    font-size: 80px;
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+    margin-bottom: 35px;
+    line-height: 80px;
+}
+
+
+.carousel_conteneur1{
+    background-color: #373737;
+    color:white;
+    padding: 8vh 0 0 0;
+}
+
+
+/* conteneur pour le carousel de la présentation des produits */
+
+
+.carousel_conteneur2{
+    background-color: #e9e9e9;
+    color:white;
+    padding: 8vh 0 8vh 0;
+}
+
+
+.carousel_conteneur_option{
+    margin: 60px 0 20px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.carousel_menu{
+    display: flex;
+    margin: 0 3% 0 8%;
+    color: #373737;
+    cursor: pointer;
+    font-size: 20px;
+    border: 0;
+    font-weight: bold;
+    width: auto;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.carousel_menu:focus{
+    background-color:#373737;
+    color: white;
+
+
+}
+
+
+
+/* produit en avant dans la page */
+
+
+.carousel_conteneur3{
+    list-style-type: none;
+    padding: 0 0 30px 0;
+    display: flex;
+    max-width: 1900px;
+    margin: 0;
+    flex-wrap: wrap!important;
+}
+
+.carousel_block{
+    flex: 1;
+    margin: 0 20px 50px;
+
+    border-radius: 5px;
+    background-color: white;
+    padding-bottom: 40px;
+    min-width: 29%;
+    max-width: 29%;
+    text-align: center;
+}
+
+.carousel_image{
+    object-fit: cover;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.carousel_titre{
+    margin-top: 20px;
+    color: #373737;
+}
+
+.carousel_categorie_velo{
+    text-align: start;
+    color:#373737;
+    margin-left:100px;
+    font-size: 20px;
+}
+.carousel_prix{
+    color: #373737;
+    text-align: end;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.carousel_centre_bouton{
+    text-align: center;
+    margin-top:20px
+}
+
+.carousel_button {
+    text-align: center;
+    color: #373737;
+    padding: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #373737;
+
+
+}
+
+.carousel_button:hover{
+    background-color: #373737;
     color: white;
 }
 
-button.active.carousel_velo {
-    background-color: #00C9FF !important;
-    color: #373737;
-}
+
+@media only screen and (max-width: 1200px){
 
 
-button.carousel_velo_fin {
-    margin-bottom: 0;
-}
+    .carousel_conteneur3{
+        justify-content: center;
+    }
 
-button.active.carousel_velo_fin {
-    text-indent: 0;
-    background-color: #00C9FF !important;
-    color: #373737;
+    .carousel_block{
+        flex: 1;
+        margin: 0 20px 50px;
 
-}
+        border-radius: 5px;
+        background-color: white;
+        padding-bottom: 40px;
+        min-width: 40%;
+        max-width: 40%;
+        text-align: center;
+    }
 
-.carousel_1 {
-    margin-bottom: 31%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 7%;
-}
-
-
-/* image de fond slider */
-.carousel-item .carousel_taille_image {
-
-    z-index: -1;
-    object-fit: cover;
-    -webkit-filter: brightness(70%);
 
 }
 
+@media only screen and (max-width: 850px){
 
-/* flèche prev et next sur le carousel */
+    .carousel_block{
+        flex: 1;
+        margin: 0 20px 50px;
 
-.carousel_control1 {
-    top: 80% !important;
-    margin-left: 42%;
-    width: 8%;
-}
+        border-radius: 5px;
+        background-color: white;
+        padding-bottom: 40px;
+        min-width: 90%;
+        max-width: 90%;
+        text-align: center;
+    }
 
-.carousel_control2 {
-    top: 80% !important;
-    margin-right: 44%;
-    width: 8%;
+
+    .carousel_menu{
+        font-size: 17px;
+        margin: 0 3% 0 5%;
+    }
+
 }

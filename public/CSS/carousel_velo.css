@@ -164,6 +164,10 @@
 
 @media only screen and (max-width: 850px){
 
+    .titre_carousel{
+        font-size: 65px;
+    }
+
     .carousel_block{
         flex: 1;
         margin: 0 20px 50px;

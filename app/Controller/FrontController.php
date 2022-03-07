@@ -43,7 +43,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/carousel_velo.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -131,6 +131,7 @@ class FrontController
 
         return ob_get_clean();
     }
+   
 
 
 }

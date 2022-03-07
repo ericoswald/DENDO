@@ -34,6 +34,9 @@
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
 
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 </head>
 
@@ -54,6 +57,7 @@
   <script src="<?= ROOT_URL?>/JS/leaflet.js"></script>
 
   <script src="<?= ROOT_URL?>/JS/toggle_carousel.js"></script>
+  <script src="<?= ROOT_URL?>/JS/faq.js"></script>
 </body>
 
 </html>

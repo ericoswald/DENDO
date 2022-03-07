@@ -39,7 +39,7 @@ class FrontController
         ob_start();
 
         //Definir les variables ici (ex. $title, $products, etc).
-        $title = "Dendo Jitesha : Produit";
+        $title = "Dendo Jitesha : Carousel Velo";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/carousel_velo.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
@@ -55,7 +55,7 @@ class FrontController
         ob_start();
 
         //Definir les variables ici (ex. $title, $products, etc).
-        $title = "Dendo Jitesha : Produit";
+        $title = "Dendo Jitesha : Contact";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/contact.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
@@ -72,7 +72,7 @@ class FrontController
         ob_start();
 
         //Definir les variables ici (ex. $title, $products, etc).
-        $title = "Dendo Jitesha : Produit";
+        $title = "Dendo Jitesha : Equipement";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/equipement.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
@@ -88,7 +88,7 @@ class FrontController
         ob_start();
 
         //Definir les variables ici (ex. $title, $products, etc).
-        $title = "Dendo Jitesha : Produit";
+        $title = "Dendo Jitesha : Lien";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/lien.php';
         $header = ROOT_PROJECT . "/app/HTML/header.php";
@@ -121,9 +121,26 @@ class FrontController
         ob_start();
 
         //Definir les variables ici (ex. $title, $products, etc).
-        $title = "Dendo Jitesha : Produit";
+        $title = "Dendo Jitesha : Support";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/support.php';
+        $style_header = ROOT_URL . "/CSS/style_header.css";
+        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        require ROOT_PROJECT . '/app/HTML/template.php';
+
+
+        return ob_get_clean();
+    }
+
+
+    public function faq(): string
+    {
+        ob_start();
+
+        //Definir les variables ici (ex. $title, $products, etc).
+        $title = "Dendo Jitesha : Faq";
+
+        $mainTemplate = ROOT_PROJECT . '/app/HTML/faq.php';
         $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header.php";
         require ROOT_PROJECT . '/app/HTML/template.php';

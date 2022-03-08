@@ -157,6 +157,23 @@ class FrontController
         return ob_get_clean();
     }
 
+    public function barre_recherche(): string
+    {
+        ob_start();
+
+        //Definir les variables ici (ex. $title, $products, etc).
+        $title = "Dendo Jitesha : Barre de recheche";
+
+        $mainTemplate = ROOT_PROJECT . '/app/HTML/barre_recherche.php';
+        $style_header = ROOT_URL . "/CSS/style_header_white.css";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
+        $logo = ROOT_URL . "/assets/image/logo.png";
+        require ROOT_PROJECT . '/app/HTML/template.php';
+
+
+        return ob_get_clean();
+    }
+
     public function deconnexion(): string
     {
         ob_start();
@@ -182,7 +199,7 @@ class FrontController
         $title = "Dendo Jitesha : Login";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/login.php';
-        $style_header = ROOT_URL . "/CSS/style_header.css";
+        $style_header = ROOT_URL . "/CSS/style_header_white.css";
         $header = ROOT_PROJECT . "/app/HTML/header.php";
         $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';

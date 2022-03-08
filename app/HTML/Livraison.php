@@ -2,7 +2,7 @@
 
            try
                {
-                   $db = new PDO("mysql:host=localhost;dbname=newsletter", "root", "");
+                   $db = new PDO("mysql:host=localhost;dbname=dendo", "root", "");
                    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                    
                }
@@ -11,7 +11,7 @@
                    echo "Erreur de la connexion : " .$e->getMessage();
                    die();
                }
-               if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['adresse']))
+               if(!empty($_POST['nom']) && !empty($_POST['email']) && !empty($_POST['telephone']) && !empty($_POST['adresse'])  && !empty($_POST['adresse_facturation'])  && !empty($_POST['codePostal'])  && !empty($_POST['libelle'])  && !empty($_POST['pays'])  && !empty($_POST['ville']))
                {
                        
                $insertion = $db->prepare("INSERT INTO `client` (`email`, `nom`, `telephone`) VALUES (:email, :nom, :telephone);");
@@ -28,7 +28,7 @@
                $verification = $insertion->execute();
                
                 if ($verification) {
-                   echo "Inscription effectuée";
+                   echo "Validation du formulaire";
                }else{
                    echo "Echec de l'insertion";
                }   

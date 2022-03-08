@@ -209,7 +209,16 @@ class FrontController
     }
 
 
-    public function verifMotDePasse(string $mdp)
+
+
+    public function inscriptionTraitement()
+    {
+
+        require(ROOT_PROJECT. '/app/HTML/loginCapchat/register/captcha/autoload.php');
+        $secret = '6LeGbYcdAAAAADGRsng3vQiY5L57xBXuXhjjdUHu';
+        $recaptcha = new \ReCaptcha\ReCaptcha($secret);
+
+        function verifMotDePasse(string $mdp)
     {
         if (strlen($mdp) >= 8) {
             $minCarac = false;
@@ -234,16 +243,10 @@ class FrontController
         return $minCarac && $majCarac && $specialCarac;
     }
 
-    public function inscriptionTraitement()
-    {
-
-        require('captcha/autoload.php');
-        $secret = '6LeGbYcdAAAAADGRsng3vQiY5L57xBXuXhjjdUHu';
-        $recaptcha = new \ReCaptcha\ReCaptcha($secret);
-
         try {
-            $bdd = new PDO("mysql:host=localhost;dbname=dendov2;charset=utf8", "root", "");
-        } catch (PDOException $e) {
+            $bdd = new \PDO("mysql:host=localhost;dbname=dendov2;charset=utf8", "root", "");
+
+        } catch (\PDOException $e) {
             die('Erreur : ' . $e->getMessage());
         }
 
@@ -281,6 +284,7 @@ class FrontController
                                                 'password' => $password,
                                                 'ip' => $ip
                                             ));
+
                                             header('Location:register?reg_err=success');
                                             die();
                                         } else {
@@ -321,6 +325,44 @@ class FrontController
         }
 
     }
+ public function connexion(){
+     session_start();
 
+     try {
+         $bd = new \PDO('mysql:host=localhost;dbname=dendov2;', 'root', '');
+     } catch (\Exception $e) {
+         die("Erreur :" . $e->getMessage());
+     }
+     if (isset($_POST['email']) && isset($_POST['password'])) {
+         $email = htmlspecialchars($_POST['email']);
+         $password = htmlspecialchars($_POST['password']);
+
+
+         $query = 'SELECT pseudo,email,password FROM utilisateur WHERE email = ?';
+         $check = $bd->prepare($query);
+         $check->execute(array($email));
+
+         $data = $check->fetch();
+         $row = $check->rowCount();
+
+         if ($row == 1) {
+
+             if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+
+
+                 if (password_verify($password, $data['password'])) {
+
+                     $_SESSION['user'] = $data['pseudo'];
+                     header('Location:home');
+                     die();
+
+                 } else header('Location:login?login_err=password');
+             } else header('Location:login?login_err=email');
+         } else header('Location:login?login_err=already');
+
+
+     }else header('Location:login');
+ }
 
 }

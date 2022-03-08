@@ -19,14 +19,14 @@
 .barre{
     border-radius: 30px!important;
     height : 50px!important;
-    border-color: blue !important;
-    width: 400px!important;
+    border: black !important;
+    width: 200px!important;
 }
 
 .bouton_recherche{
     border-radius: 20px!important;
     background-color: white!important;
-    width: 100px!important;
+    width: 200px!important;
     height: 30px!important;
 
 }

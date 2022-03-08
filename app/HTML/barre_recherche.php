@@ -14,7 +14,7 @@ if (isset($_GET['S']) and !empty($_GET['S'])) {
     <div class="recherche">
         <form method="GET">
             <input class="barre" type="search" name="S" placeholder="Recherche d'un produit" style="text-align: center"><BR><BR>
-            <input class="bouton" type="submit" name="envoyer">
+            <input class="bouton_recherche" type="submit" name="envoyer" placeholder="Envoyez">
         </form>
     </div>
     <section class="afficher_produit">

@@ -18,7 +18,6 @@
         <label for="adresse"><b>Code postal</b></label>
         <input type="text" placeholder="Veuillez saisir votre code postal" name="adresse">
 
-<<<<<<< HEAD
         <label for="telephone"><b>Téléphone</b></label><br>
         <input type="text" placeholder="Veuillez saisir votre numéro de téléphone" name="telephone"><br><br>
 

@@ -130,6 +130,7 @@ class FrontController
 
         return ob_get_clean();
     }
+   
 
 
     public function faq(): string

@@ -32,14 +32,14 @@ unset($_SESSION['aproduit'])
 
             <div id="vtt">
 
-                <?php $products = $DB->query('SELECT a.*, ca.libelle FROM article a inner join categorie_has_article cha ON a.id = cha.Article_id inner join categorie ca ON cha.Categorie_id = ca.id  where ca.libelle = "Vtt"');
+                <?php $products = $DB->query('SELECT a.*, ca.libelle, i.image FROM article a inner join categorie_has_article cha ON a.id = cha.Article_id inner join categorie ca ON cha.Categorie_id = ca.id inner join image i on a.id = i.id where ca.libelle = "Vtt"');
                 foreach ( $products as $product ):
                 ?>
 
 
                 <li class="carousel_block">
                     <a href="">
-                        <img class="carousel_image" src="/public/assets/image/Lapierre_spicy.jpg" alt="velo1"></a>
+                        <img class="carousel_image" src="/public/<?= $product->image; ?>" alt="velo1"></a>
                     <h2 class="carousel_titre"><?= $product->nom; ?></h2>
                     <div class="carousel_categorie_velo"><?= $product->libelle; ?></div>
                     <div class="carousel_prix"><?= $product->prix; ?>€</div>
@@ -56,11 +56,11 @@ unset($_SESSION['aproduit'])
 
             <div id="route">
 
-                <?php $products = $DB->query('SELECT a.*, ca.libelle FROM article a inner join categorie_has_article cha ON a.id = cha.Article_id inner join categorie ca ON cha.Categorie_id = ca.id  where ca.libelle = "Route"'); ?>
+                <?php $products = $DB->query('SELECT a.*, ca.libelle, i.image FROM article a inner join categorie_has_article cha ON a.id = cha.Article_id inner join categorie ca ON cha.Categorie_id = ca.id inner join image i on a.id = i.id where ca.libelle = "Route"'); ?>
                 <?php foreach ($products as $product): ?>
                 <li class="carousel_block">
                     <a href="">
-                        <img class="carousel_image" src="/public/assets/image/Lapierre_spicy.jpg" alt="velo1"></a>
+                        <img class="carousel_image" src="/public/<?= $product->image; ?>" alt="velo1"></a>
                     <h2 class="carousel_titre"><?= $product->nom; ?></h2>
                     <div class="carousel_categorie_velo"><?= $product->libelle; ?></div>
                     <div class="carousel_prix"><?= $product->prix; ?>€</div>
@@ -76,11 +76,11 @@ unset($_SESSION['aproduit'])
 
             <div id="ville">
 
-                <?php $products = $DB->query('SELECT a.*, ca.libelle FROM article a inner join categorie_has_article cha ON a.id = cha.Article_id inner join categorie ca ON cha.Categorie_id = ca.id  where ca.libelle = "Ville"'); ?>
+                <?php $products = $DB->query('SELECT a.*, ca.libelle, i.image FROM article a inner join categorie_has_article cha ON a.id = cha.Article_id inner join categorie ca ON cha.Categorie_id = ca.id inner join image i on a.id = i.id where ca.libelle = "Ville" '); ?>
                 <?php foreach ($products as $product): ?>
                 <li class="carousel_block">
                     <a href="">
-                        <img class="carousel_image" src="/public/assets/image/Lapierre_spicy.jpg" alt="velo1"></a>
+                        <img class="carousel_image" src="/public/<?= $product->image; ?>" alt="velo1"></a>
                     <h2 class="carousel_titre"><?= $product->nom; ?></h2>
                     <div class="carousel_categorie_velo"><?= $product->libelle; ?></div>
                     <div class="carousel_prix"><?= $product->prix; ?>€</div>

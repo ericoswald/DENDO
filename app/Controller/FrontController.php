@@ -157,6 +157,40 @@ class FrontController
         return ob_get_clean();
     }
 
+    public function Livraison(): string
+    {
+        ob_start();
+
+        //Definir les variables ici (ex. $title, $products, etc).
+        $title = "Dendo Jitesha : Faq";
+
+        $mainTemplate = ROOT_PROJECT . '/app/HTML/Livraison.php';
+        $style_header = ROOT_URL . "/CSS/style_header_white.css";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
+        $logo = ROOT_URL . "/assets/image/logo.png";
+        require ROOT_PROJECT . '/app/HTML/template.php';
+
+
+        return ob_get_clean();
+    }
+
+    public function validation(): string
+    {
+        ob_start();
+
+        //Definir les variables ici (ex. $title, $products, etc).
+        $title = "Dendo Jitesha : Faq";
+
+        $mainTemplate = ROOT_PROJECT . '/app/HTML/validation.php';
+        $style_header = ROOT_URL . "/CSS/style_header_white.css";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
+        $logo = ROOT_URL . "/assets/image/logo.png";
+        require ROOT_PROJECT . '/app/HTML/template.php';
+
+
+        return ob_get_clean();
+    }
+
     public function barre_recherche(): string
     {
         ob_start();
@@ -200,7 +234,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/login.php';
         $style_header = ROOT_URL . "/CSS/style_header_white.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 

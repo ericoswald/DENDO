@@ -84,7 +84,7 @@ header {
     height: 120vh;
     font-size: 25px;
     align-self: center;
-    padding: 200px 0 200px 0;
+    padding: 300px 0 250px 0;
     /*border:  1px solid red;*/
 
 }
@@ -236,14 +236,7 @@ input[type=submit]:hover {
 
 
 
-@media only screen and (max-width: 1150px){
 
-    .form_inscription {
-        height: 115vh;
-
-    }
-
-}
 
 
 

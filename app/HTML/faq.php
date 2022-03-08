@@ -1,6 +1,6 @@
 
 <main>
-    <div class="container">
+    <div class="container_faq">
 
         <h1 class="heading">F.A.Q</h1>
 

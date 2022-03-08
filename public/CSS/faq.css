@@ -12,46 +12,46 @@
     background: lightgrey;
 }
 
-.container{
+.container_faq{
     margin:20px auto;
     max-width: 700px;
 }
 
-.container .heading{
+.container_faq .heading{
     text-align: center;
     font-size: 30px;
     padding:20px;
     margin-bottom: 20px;
 }
 
-.container .accordion-container{
+.container_faq .accordion-container_faq{
     padding:0 20px;
 }
 
-.container .accordion-container .accordion{
+.container_faq .accordion-container .accordion{
     margin-bottom: 20px;
     cursor: pointer;
 }
 
-.container .accordion-container .accordion.active .accordion-heading{
+.container_faq .accordion-container .accordion.active .accordion-heading{
     background: black;
 }
 
-.container .accordion-container .accordion.active .accordion-heading h3{
+.container_faq .accordion-container .accordion.active .accordion-heading h3{
     color:#fff;
 }
 
-.container .accordion-container .accordion.active .accordion-heading i{
+.container_faq .accordion-container .accordion.active .accordion-heading i{
     color:#fff;
     transform: rotate(180deg);
     transition: transform .2s .1s;
 }
 
-.container .accordion-container .accordion.active .accordion-content{
+.container_faq .accordion-container .accordion.active .accordion-content{
     display: block;
 }
 
-.container .accordion-container .accordion .accordion-heading{
+.container_faq .accordion-container .accordion .accordion-heading{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,15 +61,15 @@
     padding:15px 20px;
 }
 
-.container .accordion-container .accordion .accordion-heading h3{
+.container_faq .accordion-container .accordion .accordion-heading h3{
     font-size: 18px;
 }
 
-.container .accordion-container .accordion .accordion-heading i{
+.container_faq .accordion-container .accordion .accordion-heading i{
     font-size: 25px;
 }
 
-.container .accordion-container .accordion .accordion-content{
+.container_faq .accordion-container .accordion .accordion-content{
     padding:15px 20px;
     border:2px solid #000;
     font-size: 15px;

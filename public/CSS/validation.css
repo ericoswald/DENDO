@@ -1,7 +1,3 @@
-h1{
-    padding-top: 10%;
-    text-decoration: underline;
-}
 
 .vertical {
     border-left: 4px solid black;
@@ -12,7 +8,7 @@ h1{
     justify-content: right;
 }
 
-body{
+.couleur_validation{
     background-color: lightgray;
 }
 
@@ -20,6 +16,6 @@ body{
     background-color: #F9FFA9;
     border-radius: 0 0 10% 10%;
 }
-.titre{
+.titre_validation{
     font-family: Helvetica, sans-serif;
 }

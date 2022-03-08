@@ -1,48 +1,21 @@
 <main>
-    <div id="container">
+    <div id="container_livraison">
 
-        .couleur_validation{
-            background-color: lightgray;
-        }
+        <label class="label_livraison" for="nom"><b>Nom</b></label>
+        <input class="input_livraison" type="text" placeholder="Veuillez saisir votre nom" name="nom">
 
-        #bloc1{
-            width:400px;
-            margin:0 auto;
-            margin-top:10%;
-        }
-        form_livraison {
-            width:100%;
-            padding: 30px;
-            border: 1px solid #f1f1f1;
-            background: #fff;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
-        #bloc1 h1{
-            width: 100%;
-            margin: 0 auto;
-            padding-bottom: 30px;
-            color: white;
-            text-align: center;
-            text-decoration: underline;
-        }
+        <label class="label_livraison"  for="prenom"><b>Prénom</b></label>
+        <input class="input_livraison" type="text" placeholder="Veuillez saisir votre prénom" name="prenom">
 
-        <label for="nom"><b>Nom</b></label>
-        <input type="text" placeholder="Veuillez saisir votre nom" name="nom">
+        <label class="label_livraison"  for="email"><b>Email</b></label>
+        <input class="input_livraison" placeholder="Veuillez saisir votre email" name="email">
 
-        <label for="prenom"><b>Prénom</b></label>
-        <input type="text" placeholder="Veuillez saisir votre prénom" name="prenom">
+        <label class="label_livraison"  for="adresse"><b>Adresse</b></label>
+        <<input class="input_livraison" placeholder="Veuillez saisir votre adresse" name="adresse">
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Veuillez saisir votre email" name="email">
+        <label class="label_livraison"  for="adresse"><b>Code postal</b></label>
+        <input class="input_livraison" placeholder="Veuillez saisir votre code postal" name="adresse">
 
-        <label for="adresse"><b>Adresse</b></label>
-        <input type="text" placeholder="Veuillez saisir votre adresse" name="adresse">
-
-        <label for="adresse"><b>Code postal</b></label>
-        <input type="text" placeholder="Veuillez saisir votre code postal" name="adresse">
-
-    </style>
-</head>
 <body>
 <div id="couleur_livraison"></div>
 <div id="bloc1">

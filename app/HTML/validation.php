@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../../public/CSS/style.css" media="screen" type="text/css" />
     <style>
         h1{
             padding-top: 10%;
@@ -48,7 +48,7 @@
     <h2>Livraison</h2><BR>
     <Span>Mes coordonées de livraison : </Span><BR><BR>
     <span>Je souheterai renseinger mes coordonées</span><BR><BR><BR>
-    <a href ="Livraison.html">Enregistrement de mes données</a>
+    <a href ="../../public/index.php">Enregistrement de mes données</a>
 </div>
 
 

@@ -43,7 +43,7 @@
             }
         }
         ?>
-        <form action="<?= ROOT_URL?>/../app/HTML/loginCaptcha/register/connexion.php" method="post">
+        <form action="<?= ROOT_URL?>/connexion" method="post">
             <div class="username user_pass">
                 <span class="iconify" data-icon="codicon:account"></span>
 

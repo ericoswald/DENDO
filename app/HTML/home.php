@@ -41,8 +41,10 @@
     <div class="carousel-item" data-bs-interval="5000">
       <img src="./assets/image/background.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption aaaa d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+          <div class="slide3_texte">Cliquer sur le lien ci-dessous pour découvrir nos autres modèles</div>
+        <div class="home_conteneur">
+            <a href="<?= ROOT_URL?>carousel_velo" ><span class="home_bouton">Découvrir</span></a>
+        </div>
       </div>
     </div>
   </div>

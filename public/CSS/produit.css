@@ -230,7 +230,12 @@ input[type="radio"].demo2.produit_conteneur_roue3:checked + label {
 
 
 
-#produit_d2{background-color: #44EEAA99;}
+#produit_d2{
+    margin: 2% 20% 0 30%;
+    position: relative;
+
+
+}
 
 
 

@@ -28,8 +28,7 @@ class FrontController
         $mainTemplate = ROOT_PROJECT . '/app/HTML/loginCapchat/register/register.php';
         $title = "Dendo Jitesha : Inscription";
         $style_header = ROOT_URL . "/CSS/style_header.css";
-
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
     }
@@ -43,7 +42,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/carousel_velo.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -59,7 +58,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/contact.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -76,7 +75,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/equipement.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -91,7 +90,7 @@ class FrontController
         $title = "Dendo Jitesha : Lien";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/lien.php';
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -108,7 +107,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/produit.php';
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -125,7 +124,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/support.php';
         $style_header = ROOT_URL . "/CSS/style_header.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -142,7 +141,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/faq.php';
         $style_header = ROOT_URL . "/CSS/style_header.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 

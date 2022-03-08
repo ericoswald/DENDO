@@ -2,18 +2,17 @@
 
 
 
-*{
+.conteneur_faq{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     text-transform: capitalize;
     outline: none; border:none;
     text-decoration: none;
-}
-
-body{
     background: lightgrey;
 }
+
+
 
 .container{
     margin:20px auto;
@@ -65,11 +64,11 @@ body{
 }
 
 .container .accordion-container .accordion .accordion-heading h3{
-    font-size: 18px;;
+    font-size: 18px;
 }
 
 .container .accordion-container .accordion .accordion-heading i{
-    font-size: 25px;;
+    font-size: 25px;
 }
 
 .container .accordion-container .accordion .accordion-content{

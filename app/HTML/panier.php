@@ -38,6 +38,7 @@ require 'lien_panier.php';
                         <span class="prix_tva"><?= number_format($product->prix * 1.196 * $_SESSION['panier'][$product->id],2,',',' '); ?> €</span>
                         <span class="delete">
 					<a href="panier.php?delPanier=<?= $product->id; ?>" class="del"><img src="img/del.png"></a>
+                            <span><?= $product->id; ?></span>
 				</span>
                     </div>
                 <?php endforeach; ?>

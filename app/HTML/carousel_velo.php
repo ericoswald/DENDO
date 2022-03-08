@@ -1,7 +1,7 @@
 <?php
 require 'lien_panier.php';
 
-session_destroy();
+unset($_SESSION['aproduit'])
 ?>
 
 
@@ -34,9 +34,6 @@ session_destroy();
 
                 <?php $products = $DB->query('SELECT a.*, ca.libelle FROM article a inner join categorie_has_article cha ON a.id = cha.Article_id inner join categorie ca ON cha.Categorie_id = ca.id  where ca.libelle = "Vtt"');
                 foreach ( $products as $product ):
-                    var_dump($product->id);
-
-//                    var_dump($product);
                 ?>
 
 

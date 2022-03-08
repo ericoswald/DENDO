@@ -8,7 +8,7 @@ if(isset($_GET['id'])){
     }else{
         $panier->add($article[0]->id);
 
-        header('Location: /public/panier');
+        header('Location: /public/carousel_velo');
         exit();
     }
 }else{

@@ -35,9 +35,11 @@ require 'lien_panier.php';
 
             <div class="produit_selection_taille">
                 <input type="radio" name="taille_roue" class=" demo2 produit_conteneur_roue" id="taille_roue1" checked>
-                <label for="taille_roue1">27.5''</label>
+                <label for="taille_roue1">S</label>
                 <input type="radio" name="taille_roue" class=" demo2 produit_conteneur_roue2" id="taille_roue2" checked>
-                <label for="taille_roue2" class="produit_roue_2">29''</label>
+                <label for="taille_roue2" class="produit_roue_2">M</label>
+                <input type="radio" name="taille_roue" class=" demo2 produit_conteneur_roue3" id="taille_roue3" checked>
+                <label for="taille_roue3" class="produit_roue_2">L</label>
             </div>
 
             <div class="produit_velo"><img class="produit_taille_velo" src="/public/assets/image/velo1.png" alt="velo"/>
@@ -56,17 +58,17 @@ require 'lien_panier.php';
 
 
             <div class="produit_conteneur_option">
-                <button type="button" class="produit_espace_option" id="togg1">CADRE</button>
+                <button type="button" class="produit_espace_option" id="togg1">INFORMATION</button>
                 <button type="button" class="produit_espace_option" id="togg2">TAILLE & GEOMETRIE</button>
                 <button type="button" class="produit_espace_option" id="togg3">SPECIFICATION</button>
             </div>
 
             <div id="produit_d1">
-                <div ><span class="produit_menu" id="togg4">PROTECION</span></div>
-                <div><span  class="produit_menu" id="togg5">ROULEMENTS</span></div>
-                <div><span class="produit_menu" id="togg6">TUBE DE DIRECTION</span></div>
-                <div ><span class="produit_menu" id="togg7">PROTECTION DE CHAINE</span></div>
-                <div><span  class="produit_menu" id="togg8">CABLAGE</span></div>
+                <div ><span class="produit_menu" id="togg4">FREINS</span></div>
+                <div><span  class="produit_menu" id="togg5">SUSPENSION</span></div>
+                <div><span class="produit_menu" id="togg6">CADRE</span></div>
+                <div ><span class="produit_menu" id="togg7">POIDS</span></div>
+
             </div>
 
             <div class="conteneur_produit_cadre">
@@ -144,7 +146,7 @@ require 'lien_panier.php';
                         <div>COULEUR</div>
                     </div>
                     <div class="produit_taille_de_cadre">
-                        <div>S,M,L,XL,XXL</div>
+                        <div>S,M,L</div>
                         <div>Rouge et blanc</div>
                     </div>
                 </div>

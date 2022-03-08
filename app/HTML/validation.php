@@ -19,7 +19,7 @@ $message ='Veuillez remplir tous les champs';
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
     <style>
-        h1{
+        .titre_validation{
             padding-top: 10%;
             text-decoration: underline;
         }
@@ -33,16 +33,8 @@ $message ='Veuillez remplir tous les champs';
             justify-content: right;
         }
 
-        body{
+        .couleur_validation{
             background-color: lightgray;
-        }
-
-        .bouton{
-            background-color: #F9FFA9;
-            border-radius: 0% 0% 10% 10%;
-        }
-        .titre{
-            font-family: Helvetica, sans-serif;
         }
 
 
@@ -50,8 +42,8 @@ $message ='Veuillez remplir tous les champs';
     </style>
 </head>
 <body>
-
-<h1 class="titre">Vos commandes  : </h1>
+<div class="couleur_validation"</div>
+<h1 class="titre_validation">Vos commandes  : </h1>
 <hr width="100%">
 <form method="POST">
     <input type="text"  name="article_titre" placeholder="titre" /><BR>
@@ -60,8 +52,8 @@ $message ='Veuillez remplir tous les champs';
 </form>
 <div class ="vertical">
     <h2>Livraison</h2><BR>
-    <Span>Mes coordonées de livraison : </Span><BR><BR>
-    <span>Je souheterai renseinger mes coordonées</span><BR><BR><BR>
+    <Span><?= $product->id; ?> </Span>
+
     <a href ="Livraison.html">Enregistrement de mes données</a>
 </div>
 

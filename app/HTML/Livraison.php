@@ -4,22 +4,23 @@
     <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
     <style>
 
-        body{
-            background: grey;
+        .couleur_validation{
+            background-color: lightgray;
         }
-        #container{
+
+        #bloc1{
             width:400px;
             margin:0 auto;
             margin-top:10%;
         }
-        form {
+        form_livraison {
             width:100%;
             padding: 30px;
             border: 1px solid #f1f1f1;
             background: #fff;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
         }
-        #container h1{
+        #bloc1 h1{
             width: 100%;
             margin: 0 auto;
             padding-bottom: 30px;
@@ -55,8 +56,9 @@
     </style>
 </head>
 <body>
-<div id="container">
-<form>
+<div id="couleur_livraison"></div>
+<div id="bloc1">
+<form class="form_livraison" >
     <h1>Formulaire de Livraison</h1>
 
     <label for="nom"><b>Nom</b></label>

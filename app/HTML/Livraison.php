@@ -47,35 +47,35 @@
 <form class="form_livraison" >
     <h1>Formulaire de Livraison</h1>
 
-        *<label class="label_livraison" for="nom"><b>Nom</b></label>
-        <input class="input_livraison" type="text" placeholder="Veuillez saisir votre nom" name="nom">
+        <label class="label_livraison" for="nom"><b>Nom</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre nom" name="nom">
 
-        *<label class="label_livraison"  for="prenom"><b>Prénom</b></label>
-        <input class="input_livraison" type="text" placeholder="Veuillez saisir votre prénom" name="prenom">
+        <label class="label_livraison"  for="prenom"><b>Prénom</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre prénom" name="prenom">
 
-        *<label class="label_livraison"  for="email"><b>email</b></label>
-        <input class="input_livraison" placeholder="Veuillez saisir votre email" name="email">
+        <label class="label_livraison"  for="email"><b>email</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre email" name="email">
 
-        *<label class="label_livraison"  for="adresse"><b>Adresse</b></label>
-        <input class="input_livraison" placeholder="Veuillez saisir votre adresse" name="adresse">
+        <label class="label_livraison"  for="adresse"><b>Adresse</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre adresse" name="adresse">
 
-        *<label class="libelle"  for="adresse"><b>Libelle</b></label>
-        <input class="input_livraison" placeholder="Veuillez saisir votre Libelle" name="Libelle">
+        <label class="libelle"  for="libelle"><b>Libelle</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre Libelle" name="Libelle">
 
-        *<label class="label_livraison"  for="adresse_complementaire"><b>Adresse complémentaire</b></label>
-        <input class="input_livraison" placeholder="Veuillez saisir votre adresse complémentaire" name="adresse_complementaire">
+        <label class="label_livraison"  for="adresse_complementaire"><b>Adresse complémentaire</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre adresse complémentaire" name="adresse_complementaire">
  
-        *<label class="label_livraison" for="ville"><b>Ville</b></label>
-        <input class="input_livraison" type="text" placeholder="Veuillez saisir votre ville" name="ville">
+        <label class="label_livraison" for="ville"><b>Ville</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre ville" name="ville">
 
         *<label class="label_livraison" for="pays"><b>Pays</b></label>
-        <input class="input_livraison" type="text" placeholder="Veuillez saisir votre pays" name="pays">
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre pays" name="pays">
 
-        *<label class="label_livraison" for="adresse_facturation"><b>Adresse de facturation</b></label>
-        <input class="input_livraison" type="text" placeholder="Veuillez saisir votre adresse de facturation" name="adresse_facturation">
+        <label class="label_livraison" for="adresse_facturation"><b>Adresse de facturation</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre adresse de facturation" name="adresse_facturation">
 
-        *<label class="label_livraison"  for="codePostal"><b>Code postal</b></label>
-        <input class="input_livraison" placeholder="Veuillez saisir votre code postal" name="codePostal">
+        <label class="label_livraison"  for="codePostal"><b>Code postal</b></label>
+        <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre code postal" name="codePostal">
 
 
         <input class="input_bouton" type="submit" id='submit' value='Confirmer mes informations'>

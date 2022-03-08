@@ -56,7 +56,7 @@
 </head>
 <body>
 <div id="container">
-
+<form>
     <h1>Formulaire de Livraison</h1>
 
     <label for="nom"><b>Nom</b></label>

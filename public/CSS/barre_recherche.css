@@ -1,24 +1,31 @@
 .recherche{
-    position: relative;
-    display: block;
-    text-align: center;
-    top : 100px;
+    position: relative!important;
+    display: block!important;
+    text-align: center!important;
+    top : 100px!important;
+    left : 500px!important;
+    padding: 30px!important;
+    padding-bottom: 30px!important;
 }
 .afficher_produit{
-    position: relative;
-    display: block;
-    text-align: center;
-    top: 150px;
+    position: relative!important;
+    display: block!important;
+    text-align: center!important;
+    top: 150px !important;
+
 }
 
 .barre{
-    border-radius: 30px;
-    height : 50px;
-    border-color: red;
-    width: 400px;
+    border-radius: 30px!important;
+    height : 50px!important;
+    border-color: blue !important;
+    width: 400px!important;
 }
 
 .bouton{
-    border-radius: 20px;
-    background-color: lightgrey;
+    border-radius: 20px!important;
+    background-color: white!important;
+    width: 100px!important;
+    height: 30px!important;
+
 }

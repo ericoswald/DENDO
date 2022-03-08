@@ -32,7 +32,7 @@ if(isset($_GET['S']) AND !empty($_GET['S'])){
         .barre{
             border-radius: 30px;
             height : 50px;
-            border-color: #0a0a0a;
+            border-color: black;
             width: 400px;
         }
 

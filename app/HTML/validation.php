@@ -1,4 +1,5 @@
 <?php
+require 'Livraison.php';
 $bdd = new PDO('mysql:host=localhost;dbname=dendo;', 'root', '');
 
 if (isset($_POST['article_titre'], $_POST['article_contenu'])) {

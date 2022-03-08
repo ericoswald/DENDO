@@ -28,10 +28,6 @@ class panier{
 		}
 	}
 
-	public function count(){
-		return array_sum($_SESSION['panier']);
-	}
-
 	public function total(){
 		$total = 0;
 		$ids = array_keys($_SESSION['panier']);

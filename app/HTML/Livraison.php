@@ -15,7 +15,7 @@
         <input class="input_livraison" placeholder="Veuillez saisir votre email" name="email">
 
         <label class="label_livraison"  for="adresse"><b>Adresse</b></label>
-        <<input class="input_livraison" placeholder="Veuillez saisir votre adresse" name="adresse">
+        <input class="input_livraison" placeholder="Veuillez saisir votre adresse" name="adresse">
 
         <label class="label_livraison"  for="adresse"><b>Code postal</b></label>
         <input class="input_livraison" placeholder="Veuillez saisir votre code postal" name="adresse">

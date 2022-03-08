@@ -3,51 +3,42 @@ require 'lien_panier.php';
 
 ?>
 
-<div class="checkout">
-    <div class="title">
-        <div class="wrap">
-            <h2 class="titre_panier">Panier</h2>
+<div class="block_panier">
+    <div class="block_panier_mid">
+        <h1> Panier</h1>
+        <br>
+        <div class="tableau1">
+            <div class="nom_produit">Produit</div>
+            <div class="quantité_produit">Quantité</div>
+            <div class="prix_produit">Prix</div>
+            <div class="prix_tva">Prix avec TVA</div>
+            <div class="delete">Supprimer</div>
         </div>
-    </div>
-    <form method="post" action="panier.php">
-        <div class="table">
-            <div class="wrap">
+        <div>
+            <?php
+            $ids = array_keys($_SESSION['panier']);
+            if(empty($ids)){
+                $article = array();
+            }else{
+                $article = $DB->query('SELECT a.*, i.image FROM article a inner join image i ON a.id = i.id WHERE a.id IN  ('.implode(',',$ids).')');
+            }
+            foreach($article as $product):
+                ?>
+                <div class="tableau1">
 
-                <div class="titre_ligne">
-                    <span class="nom_produit">Produit</span>
-                    <span class="quantité_produit">Quantité</span>
-                    <span class="prix_produit">Prix</span>
-                    <span class="prix_tva">Prix avec TVA</span>
-                    <span class="delete">Supprimer</span>
-                </div>
-
-                <?php
-                $ids = array_keys($_SESSION['panier']);
-                if(empty($ids)){
-                    $article = array();
-                }else{
-                    $article = $DB->query('SELECT * FROM article WHERE id IN ('.implode(',',$ids).')');
-                }
-                foreach($article as $product):
-                    ?>
-                    <div class="row">
-                        <a href="#" class="img"> <img src="img/<?= $product->id; ?>.png" height="53"></a>
-                        <span class="nom_produit"><?= $product->nom; ?></span>
-                        <span class="quantité_produit"><input type="text" name="panier[quantity][<?= $product->id; ?>]" value="<?= $_SESSION['panier'][$product->id]; ?>"></span>
-                        <span class="prix_produit"><?= number_format($product->prix * $_SESSION['panier'][$product->id],2,',',' ') ; ?> €</span>
-                        <span class="prix_tva"><?= number_format($product->prix * 1.196 * $_SESSION['panier'][$product->id],2,',',' '); ?> €</span>
-                        <span class="delete">
-					<a href="panier.php?delPanier=<?= $product->id; ?>" class="del"><img src="img/del.png"></a>
-                            <span><?= $product->id; ?></span>
+                    <span class="nom_produit"><a class="img_panier"> <img src="/public/<?= $product->image; ?>"></a><span><?= $product->nom; ?></span></span>
+                    <span class="quantité_produit"><input type="number" name="panier[quantité][<?= $product->id; ?>]" value="<?= $_SESSION['panier'][$product->id]; ?>"></span>
+                    <span class="prix_produit"><?= number_format($product->prix * $_SESSION['panier'][$product->id],2,',',' ') ; ?> €</span>
+                    <span class="prix_tva"><?= number_format($product->prix * 1.196 * $_SESSION['panier'][$product->id],2,',',' '); ?> €</span>
+                    <span class="delete">
+					<a href="panier?delPanier=<?= $product->id; ?>" class="del"><img src="../../public/assets/image/del.png "></a>
 				</span>
-                    </div>
-                <?php endforeach; ?>
-                <div class="rowtotal">
-                    Prix Total : <span class="total"><?= number_format($panier->total() * 1.196,2,',',' '); ?> € </span>
-                    <input type="submit" value="Commander">
                 </div>
-
+            <?php endforeach; ?>
+            <div>
+                Prix Total : <span class="total"><?= number_format($panier->total() * 1.196,2,',',' '); ?> € </span>
+                <a href="/app/HTML/ajout_panier.php?id=<?= $product->id; ?>">Commander</a>
             </div>
         </div>
-    </form>
+    </div>
 </div>

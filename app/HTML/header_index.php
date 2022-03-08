@@ -20,7 +20,7 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="<?= ROOT_URL?>carousel_velo">VELOS</a></li>
-                <li><a class="dropdown-item" href="<?= ROOT_URL?>produit">EQUIPEMENT</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>equipement">EQUIPEMENT</a></li>
                 <li><a class="dropdown-item" href="#">COMPOSANT ET ACCESSOIRE**</a></li>
               </ul>
             </div>

@@ -25,8 +25,9 @@ if (isset($_POST['article_titre'], $_POST['article_contenu'])) {
     </form>
     <div class="vertical">
         <h2>Livraison</h2><BR>
-        <Span>Mes coordonées de livraison : </Span><BR><BR>
-        <span>Je souheterai renseinger mes coordonées</span><BR><BR><BR>
+        <span><?= $product->id; ?></span>
+        <span><?= $product->nom; ?></span>
+        <span><?= $product->prix; ?></span>
         <a href="Livraison.php">Enregistrement de mes données</a>
     </div>
 

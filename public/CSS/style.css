@@ -74,6 +74,28 @@ main {
     
    
   } */
+
+/* Slide 3 */
+
+.slide3_texte{
+    font-size: 20px;
+    margin-bottom: 33px;
+}
+
+.home_conteneur{
+    display: flex;
+    justify-content: center;
+}
+
+.home_bouton{
+    padding: 17px 30px 17px 30px;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
   
   .titre_animation{
     animation: glitch 2s linear infinite;

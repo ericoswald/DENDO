@@ -100,13 +100,14 @@ input[type="radio"].demo3.equipement_conteneur_equip2:checked + label {
 }
 
 .equipement_bouton_chercher{
-    width:auto;
+
     background-color: #00C9FF;
     padding: 10px 25px;
     font-size: 20px;
     color: #373737;
     font-weight: bold;
     margin: 20px 0 20px 0;
+    width: 7%!important;
 }
 
 

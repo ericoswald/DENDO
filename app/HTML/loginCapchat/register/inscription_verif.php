@@ -5,7 +5,7 @@ $secret = '6LeGbYcdAAAAADGRsng3vQiY5L57xBXuXhjjdUHu';
 $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 
 try {
-    $bdd = new PDO("mysql:host=localhost;dbname=dendov2;charset=utf8", "root", "");
+    $bdd = new PDO("mysql:host=localhost;dbname=dendo;charset=utf8", "root", "");
 } catch (PDOException $e) {
     die('Erreur : ' . $e->getMessage());
 }

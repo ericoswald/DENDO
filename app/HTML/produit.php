@@ -7,7 +7,7 @@ require 'lien_panier.php';
                 if(empty($ids)){
                     $products = array();
                 }else{
-                    $products = $DB->query('SELECT a.*, i.image FROM article a inner join image i ON a.id = i.id WHERE a.id IN ('.implode(',',$ids).')');
+                    $products = $DB->query('SELECT * FROM article WHERE id IN ('.implode(',',$ids).')');
                 }
                 foreach($products as $product):
                     ?>
@@ -42,7 +42,7 @@ require 'lien_panier.php';
                 <label for="taille_roue3" class="produit_roue_2">L</label>
             </div>
 
-            <div class="produit_velo"><img class="produit_taille_velo" src="/public/<?= $product->image; ?>"  alt="velo"/>
+            <div class="produit_velo"><img class="produit_taille_velo" src="/public/assets/image/velo1.png" alt="velo"/>
             </div>
 
             <div class="produit_acheter">
@@ -68,7 +68,7 @@ require 'lien_panier.php';
                 <div><span  class="produit_menu" id="togg5">SUSPENSION</span></div>
                 <div><span class="produit_menu" id="togg6">CADRE</span></div>
                 <div ><span class="produit_menu" id="togg7">POIDS</span></div>
-
+                <div><span  class="produit_menu" id="togg8">CABLAGE</span></div>
             </div>
 
             <div class="conteneur_produit_cadre">
@@ -129,11 +129,12 @@ require 'lien_panier.php';
 
 
             <div id="produit_d2">
-                <p>Il existe deux façons de cacher un élément <span>comme un div</span> en CSS :</p>
-                <ul>
-                    <li>Utiliser visibility: hidden</li>
-                    <li>Utiliser display: none</li>
-                </ul>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                </div>
+
             </div>
 
 

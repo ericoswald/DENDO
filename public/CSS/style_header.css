@@ -62,6 +62,7 @@ header {
 .header .iconify {
     width: 30px;
     height: auto;
+    color: black!important;
 }
 
 .header_close {

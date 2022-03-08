@@ -80,7 +80,7 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 99vh;
+    height: 120vh;
     font-size: 25px;
     align-self: center;
     padding: 200px 0 200px 0;
@@ -238,11 +238,11 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1150px){
 
     .form_inscription {
-        height: 105vh;
+        height: 115vh;
 
     }
 
-
+}
 
 
 
@@ -251,6 +251,5 @@ input[type=submit]:hover {
         width: 390px;
     }
 
-    }
-
 }
+

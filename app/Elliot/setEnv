@@ -1,0 +1,4 @@
+<?php
+
+define('ROOT_PROJECT', 'C:\wamp64\www\carousel\DENDO');
+define('ROOT_URL', 'http://carousel.fr/public/');

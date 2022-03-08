@@ -94,6 +94,18 @@
     text-align: center;
 }
 
+#vtt, #route, #ville{
+    flex-wrap:wrap;
+    text-transform:uppercase;
+}
+
+
+div#vtt,#route,#ville{
+    display:flex;
+    flex-wrap:wrap;
+    text-transform:uppercase;
+}
+
 .carousel_image{
     object-fit: cover;
     width: 70%;

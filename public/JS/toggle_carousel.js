@@ -25,15 +25,15 @@ let ville = document.getElementById("ville");
 
 
 slide1.addEventListener("click", () => {
-    if (getComputedStyle(slide1).display === "none" || "block") {
+    if (getComputedStyle(slide1).display === "none" || "flex") {
 
-        vtt.style.display = "block";
-
-
-        route.style.display = "block";
+        vtt.style.display = "flex";
 
 
-        ville.style.display = "block";
+        route.style.display = "flex";
+
+
+        ville.style.display = "flex";
 
 
     } else {
@@ -44,9 +44,9 @@ slide1.addEventListener("click", () => {
 
 
 slide2.addEventListener("click", () => {
-    if (getComputedStyle(vtt).display === "none" || "block") {
+    if (getComputedStyle(vtt).display === "none" || "flex") {
 
-        vtt.style.display = "block";
+        vtt.style.display = "flex";
 
 
         route.style.display = "none";
@@ -64,10 +64,10 @@ slide2.addEventListener("click", () => {
 
 
 slide3.addEventListener("click", () => {
-    if (getComputedStyle(route).display === "none" || "block") {
+    if (getComputedStyle(route).display === "none" || "flex") {
 
 
-        route.style.display = "block";
+        route.style.display = "flex";
 
 
         vtt.style.display = "none";
@@ -86,8 +86,8 @@ slide3.addEventListener("click", () => {
 })
 
 slide4.addEventListener("click", () => {
-    if (getComputedStyle(ville).display === "none" || "block" ) {
-        ville.style.display = "block";
+    if (getComputedStyle(ville).display === "none" || "flex" ) {
+        ville.style.display = "flex";
 
 
         vtt.style.display = "none";

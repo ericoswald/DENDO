@@ -1,9 +1,7 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
-    <style>
+<main>
+    <div id="container">
 
+<<<<<<< HEAD
         .couleur_validation{
             background-color: lightgray;
         }
@@ -28,31 +26,26 @@
             text-align: center;
             text-decoration: underline;
         }
+=======
+        <h1>Formulaire de Livraison</h1>
+>>>>>>> 61171596377990ef4a821cff3b40dc3fbce8687e
 
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
+        <label for="nom"><b>Nom</b></label>
+        <input type="text" placeholder="Veuillez saisir votre nom" name="nom">
 
+        <label for="prenom"><b>Prénom</b></label>
+        <input type="text" placeholder="Veuillez saisir votre prénom" name="prenom">
 
-        input[type=submit] {
-            background-color: white;
-            color: black;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            width: 100%;
-        }
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Veuillez saisir votre email" name="email">
 
-        label{
-            color: white;
-        }
+        <label for="adresse"><b>Adresse</b></label>
+        <input type="text" placeholder="Veuillez saisir votre adresse" name="adresse">
 
+        <label for="adresse"><b>Code postal</b></label>
+        <input type="text" placeholder="Veuillez saisir votre code postal" name="adresse">
 
+<<<<<<< HEAD
     </style>
 </head>
 <body>
@@ -60,26 +53,15 @@
 <div id="bloc1">
 <form class="form_livraison" >
     <h1>Formulaire de Livraison</h1>
+=======
+        <label for="telephone"><b>Téléphone</b></label><br>
+        <input type="text" placeholder="Veuillez saisir votre numéro de téléphone" name="telephone"><br><br>
+>>>>>>> 61171596377990ef4a821cff3b40dc3fbce8687e
 
-    <label for="nom"><b>Nom</b></label>
-    <input type="text" placeholder="Veuillez saisir votre nom" name="nom">
+        <input type="submit" id='submit' value='Confirmer mes informations'>
 
-    <label for="prenom"><b>Prénom</b></label>
-    <input type="text" placeholder="Veuillez saisir votre prénom" name="prenom" >
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Veuillez saisir votre email" name="email" >
+        </form>
+    </div>
 
-    <label for="adresse"><b>Adresse</b></label>
-    <input type="text" placeholder="Veuillez saisir votre adresse" name="adresse" >
-
-    <label for="adresse"><b>Code postal</b></label>
-    <input type="text" placeholder="Veuillez saisir votre code postal" name="adresse" >
-
-    <label for="telephone"><b>Téléphone</b></label><br>
-    <input type="text" placeholder="Veuillez saisir votre numéro de téléphone" name="telephone" ><br><br>
-
-    <input type="submit" id='submit' value='Confirmer mes informations' >
-
-    </form>
-</div>
+</main>

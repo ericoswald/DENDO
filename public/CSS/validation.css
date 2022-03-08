@@ -1,0 +1,25 @@
+h1{
+    padding-top: 10%;
+    text-decoration: underline;
+}
+
+.vertical {
+    border-left: 4px solid black;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    left : 900px;
+    justify-content: right;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.bouton{
+    background-color: #F9FFA9;
+    border-radius: 0 0 10% 10%;
+}
+.titre{
+    font-family: Helvetica, sans-serif;
+}

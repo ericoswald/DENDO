@@ -2,7 +2,7 @@
 
 
 
-.conteneur_faq{
+.faq_conteneur{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
@@ -12,8 +12,6 @@
     background: lightgrey;
 }
 
-
-
 .container{
     margin:20px auto;
     max-width: 700px;
@@ -22,8 +20,8 @@
 .container .heading{
     text-align: center;
     font-size: 30px;
+    padding:20px;
     margin-bottom: 20px;
-    padding: 80px 20px 20px 20px;
 }
 
 .container .accordion-container{

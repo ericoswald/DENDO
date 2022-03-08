@@ -75,8 +75,8 @@
       <!-- DARK MODE LIGHT MODE -->
 
 
-         <span class="iconify" data-icon="bi:search"></span>
-          <a href="<?= ROOT_URL?>register"> <span class="iconify" data-icon="codicon:account"></span></a>
+          <a href="<?= ROOT_URL?>barre_recherche"><span class="iconify" data-icon="bi:search"></span></a>
+          <a href="<?= ROOT_URL?>register"><span class="iconify" data-icon="codicon:account"></span></a>
           <a href="<?= ROOT_URL?>panier"><span class="iconify" data-icon="grommet-icons:shop"></span></a>
       </div>
     </div>

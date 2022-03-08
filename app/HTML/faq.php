@@ -1,5 +1,5 @@
 
-<main>
+<main class="conteneur_faq">
     <div class="container">
 
         <h1 class="heading">F.A.Q</h1>

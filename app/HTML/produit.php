@@ -49,16 +49,16 @@
 
 
                     <div class="produit_conteneur_option">
-                        <button type="button" class="produit_espace_option" id="togg1">CADRE</button>
+                        <button type="button" class="produit_espace_option" id="togg1">INFORMATIONS</button>
                         <button type="button" class="produit_espace_option" id="togg2">TAILLE & GEOMETRIE</button>
                         <button type="button" class="produit_espace_option" id="togg3">SPECIFICATION</button>
                     </div>
 
                     <div id="produit_d1">
-                        <div ><span class="produit_menu" id="togg4">PROTECION</span></div>
-                        <div><span  class="produit_menu" id="togg5">ROULEMENTS</span></div>
-                        <div><span class="produit_menu" id="togg6">TUBE DE DIRECTION</span></div>
-                        <div ><span class="produit_menu" id="togg7">PROTECTION DE CHAINE</span></div>
+                        <div ><span class="produit_menu" id="togg4">FREINS</span></div>
+                        <div><span  class="produit_menu" id="togg5">SUSPENSION</span></div>
+                        <div><span class="produit_menu" id="togg6">CADRE</span></div>
+                        <div ><span class="produit_menu" id="togg7">POIDS DU VELO </span></div>
                         <div><span  class="produit_menu" id="togg8">CABLAGE</span></div>
                     </div>
 

@@ -19,8 +19,8 @@
                 PRODUITS
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="<?= ROOT_URL?>/carousel_velo">VELOS</a></li>
-                <li><a class="dropdown-item" href="<?= ROOT_URL?>/produit">EQUIPEMENT</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>carousel_velo">VELOS</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>produit">EQUIPEMENT</a></li>
                 <li><a class="dropdown-item" href="#">COMPOSANT ET ACCESSOIRE**</a></li>
               </ul>
             </div>
@@ -33,7 +33,7 @@
                 <li><a class="dropdown-item" href="<?= ROOT_URL?>/support">SUPPORT</a></li>
                 <li><a class="dropdown-item" href="<?= ROOT_URL?>/faq">FAQ</a></li>
                 <li><a class="dropdown-item" href="#">PAIEMENT ET EXPEDITION</a></li>
-                <li><a class="dropdown-item" href="<?= ROOT_URL?>/contact">CONTACT</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>contact">CONTACT</a></li>
               </ul>
             </div>
             <div class="dropdown">
@@ -78,9 +78,9 @@
           <span class="slider round"></span>
         </label>
 
-        <span class="iconify" data-icon="bi:search"></span>
-        <a href="<?= ROOT_URL?>/register"><span   class="iconify" data-icon="codicon:account"></span></a>
-        <span class="iconify" data-icon="grommet-icons:shop"></span>
+         <span class="iconify" data-icon="bi:search"></span>
+          <a href="<?= ROOT_URL?>register"> <span class="iconify" data-icon="codicon:account"></span></a>
+          <a href="<?= ROOT_URL?>panier"><span class="iconify" data-icon="grommet-icons:shop"></span></a>
       </div>
     </div>
   </header>

@@ -1,7 +1,11 @@
 <main>
-    <div id="container_livraison">
+<body>
+<div id="couleur_livraison"></div>
+<div id="bloc1">
+<form class="form_livraison" >
+    <h1>Formulaire de Livraison</h1>
 
-        <label class="label_livraison" for="nom"><b>Nom</b></label>
+    <label class="label_livraison" for="nom"><b>Nom</b></label>
         <input class="input_livraison" type="text" placeholder="Veuillez saisir votre nom" name="nom">
 
         <label class="label_livraison"  for="prenom"><b>Prénom</b></label>
@@ -16,16 +20,11 @@
         <label class="label_livraison"  for="adresse"><b>Code postal</b></label>
         <input class="input_livraison" placeholder="Veuillez saisir votre code postal" name="adresse">
 
-<body>
-<div id="couleur_livraison"></div>
-<div id="bloc1">
-<form class="form_livraison" >
-    <h1>Formulaire de Livraison</h1>
 
-        <input type="submit" id='submit' value='Confirmer mes informations'>
+        <input class="input_bouton" type="submit" id='submit' value='Confirmer mes informations'>
 
 
         </form>
     </div>
-
+</body>
 </main>

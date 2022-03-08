@@ -234,7 +234,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/login.php';
         $style_header = ROOT_URL . "/CSS/style_header_white.css";
-        $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 

@@ -73,10 +73,7 @@
         
 
       <!-- DARK MODE LIGHT MODE -->
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
+
 
          <span class="iconify" data-icon="bi:search"></span>
           <a href="<?= ROOT_URL?>register"> <span class="iconify" data-icon="codicon:account"></span></a>

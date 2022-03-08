@@ -26,7 +26,7 @@ header {
     /* border: 2px solid red; */
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
     height: 80px;
     color: var(--couleur-noirclair);
     padding: 0px;
@@ -78,7 +78,7 @@ header {
 
 }
 .icons_menu{
-    color: white;
+    color: black;
 
 }
 

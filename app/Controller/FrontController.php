@@ -17,7 +17,7 @@ class FrontController
         $mainTemplate = ROOT_PROJECT . '/app/HTML/home.php';
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
         $style_header = ROOT_URL . "/CSS/style_header_index.css";
-        $logo = ROOT_PROJECT . "/assets/image/Main.png";
+        $logo = ROOT_URL . "/assets/image/Main.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -28,9 +28,9 @@ class FrontController
     {
         $mainTemplate = ROOT_PROJECT . '/app/HTML/register.php';
         $title = "Dendo Jitesha : Inscription";
-        $style_header = ROOT_URL . "/CSS/style_header.css";
+        $style_header = ROOT_URL . "/CSS/style_header_white.css";
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
-        $logo = ROOT_PROJECT . "/assets/image/logo.png";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
     }
@@ -43,9 +43,9 @@ class FrontController
         $title = "Dendo Jitesha : Carousel Velo";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/carousel_velo.php';
-        $style_header = ROOT_URL . "/CSS/style_header_index.css";
+        $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
-        $logo = ROOT_PROJECT . "/assets/image/logo.png";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -60,9 +60,9 @@ class FrontController
         $title = "Dendo Jitesha : Contact";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/contact.php';
-        $style_header = ROOT_URL . "/CSS/style_header_index.css";
+        $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
-        $logo = ROOT_PROJECT . "/assets/image/logo.png";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -78,9 +78,9 @@ class FrontController
         $title = "Dendo Jitesha : Equipement";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/equipement.php';
-        $style_header = ROOT_URL . "/CSS/style_header_index.css";
+        $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
-        $logo = ROOT_PROJECT . "/assets/image/logo.png";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -96,7 +96,7 @@ class FrontController
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/lien.php';
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
-        $logo = ROOT_PROJECT . "/assets/image/logo.png";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -112,9 +112,9 @@ class FrontController
         $title = "Dendo Jitesha : Produit";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/produit.php';
-        $style_header = ROOT_URL . "/CSS/style_header_index.css";
+        $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
-        $logo = ROOT_PROJECT . "/assets/image/logo.png";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -132,7 +132,7 @@ class FrontController
         $mainTemplate = ROOT_PROJECT . '/app/HTML/support.php';
         $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
-        $logo = ROOT_PROJECT . "/assets/image/logo.png";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -148,8 +148,9 @@ class FrontController
         $title = "Dendo Jitesha : Faq";
 
         $mainTemplate = ROOT_PROJECT . '/app/HTML/faq.php';
-        $style_header = ROOT_URL . "/CSS/style_header.css";
+        $style_header = ROOT_URL . "/CSS/style_header_white.css";
         $header = ROOT_PROJECT . "/app/HTML/header_index.php";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -166,6 +167,7 @@ class FrontController
         $mainTemplate = ROOT_PROJECT . '/app/HTML/deconnexion.php';
         $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 
@@ -182,6 +184,7 @@ class FrontController
         $mainTemplate = ROOT_PROJECT . '/app/HTML/login.php';
         $style_header = ROOT_URL . "/CSS/style_header.css";
         $header = ROOT_PROJECT . "/app/HTML/header.php";
+        $logo = ROOT_URL . "/assets/image/logo.png";
         require ROOT_PROJECT . '/app/HTML/template.php';
 
 

@@ -27,3 +27,14 @@
 .support_description{
     padding: 0 34%;
 }
+
+
+
+@media only screen and (max-width: 800px){
+
+
+    .support_description{
+        padding: 0 20%;
+    }
+
+}

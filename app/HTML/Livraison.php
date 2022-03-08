@@ -68,7 +68,7 @@
         <label class="label_livraison" for="ville"><b>Ville</b></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre ville" name="ville">
 
-        *<label class="label_livraison" for="pays"><b>Pays</b></label>
+        <label class="label_livraison" for="pays"><b>Pays</b></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre pays" name="pays">
 
         <label class="label_livraison" for="adresse_facturation"><b>Adresse de facturation</b></label>

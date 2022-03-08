@@ -112,3 +112,62 @@ button {
     padding-left:10px ;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 1100px){
+    footer {
+        font-size: 13px;
+    }
+
+
+
+    button {
+        font-size: 12px;
+        width: 58%;
+    }
+
+    .newsletter .iconify {
+        width: 20%;
+    }
+
+
+    input{
+        font-size: 18px !important;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 800px){
+    h3{
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+
+    input{
+        width: 100%
+    }
+
+
+    button {
+        font-size: 8px;
+        width: 46%;
+    }
+
+
+    .newsletter .iconify {
+        width: 70%;
+    }
+
+}

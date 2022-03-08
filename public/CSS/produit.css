@@ -117,6 +117,20 @@ input[type="radio"].demo2.produit_conteneur_roue2:checked + label {
 
 }
 
+
+input[type="radio"].demo2.produit_conteneur_roue3:hover + label {
+    background-color: #00C9FF;
+    color: #373737;
+    border: 1px solid #00C9FF;
+
+}
+input[type="radio"].demo2.produit_conteneur_roue3:checked + label {
+    background-color: #00C9FF;
+    color: #373737;
+    border: 1px solid #00C9FF;
+
+}
+
 /* Velo */ 
 
 .produit_velo{
@@ -316,6 +330,11 @@ input[type="radio"].demo2.produit_conteneur_roue2:checked + label {
     .conteneur_produit_cadre{
         margin: 0 15px 0 45%;
         font-size: 14px;
+    }
+
+
+    .produit_taille_velo{
+        width: 75%;
     }
 
 }

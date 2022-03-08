@@ -2,7 +2,7 @@
 session_start();
 
 try {
-    $bd = new PDO('mysql:host=localhost;dbname=dendo;', 'root', '');
+    $bd = new PDO('mysql:host=localhost;dbname=dendov2;', 'root', '');
 } catch (Exception $e) {
     die("Erreur :" . $e->getMessage());
 }
@@ -27,12 +27,12 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             if (password_verify($password, $data['password'])) {
 
                 $_SESSION['user'] = $data['pseudo'];
-                header('Location:index_connexion.php');
+                header('Location:home');
                 die();
 
-            } else header('Location:login.php?login_err=password');
-        } else header('Location:login.php?login_err=email');
-    } else header('Location:login.php?login_err=already');
+            } else header('Location:login?login_err=password');
+        } else header('Location:login?login_err=email');
+    } else header('Location:login?login_err=already');
 
 
-}else header('Location:login.php');
+}else header('Location:login');

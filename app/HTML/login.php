@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
-    <link href="../../../../public/CSS/style_login.css" rel="stylesheet">
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin&family=Roboto+Condensed:ital@1&display=swap"
-          rel="stylesheet">
-
-</head>
-
 <body>
 
 
@@ -20,8 +5,8 @@
 
 
     <div class="sousmenu">
-        <div class="sousmenu_login select"><a href="./login.php">Connexion</a></div>
-        <div class="sousmenu_register"><a href="register.php">Inscription</a></div>
+        <div class="sousmenu_login select"><a href="<?= ROOT_URL?>/login">Connexion</a></div>
+        <div class="sousmenu_register"><a href="<?= ROOT_URL?>/register">Inscription</a></div>
     </div>
 
     <div class="login">
@@ -58,7 +43,7 @@
             }
         }
         ?>
-        <form action="connexion.php" method="post">
+        <form action="<?= ROOT_URL?>/../app/HTML/loginCaptcha/register/connexion.php" method="post">
             <div class="username user_pass">
                 <span class="iconify" data-icon="codicon:account"></span>
 
@@ -78,4 +63,3 @@
 </div>
 </body>
 
-</html>

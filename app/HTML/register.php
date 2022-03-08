@@ -1,7 +1,3 @@
-<head>
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
 
 <body>
 
@@ -11,13 +7,13 @@
 
 
         <div class="sousmenu">
-            <div class="sousmenu_login "><a href="login.php">Connexion</a></div>
-            <div class="sousmenu_register select"><a href="register.php">Inscription</a></div>
+            <div class="sousmenu_login "><a href="login">Connexion</a></div>
+            <div class="sousmenu_register select"><a href="register">Inscription</a></div>
         </div>
 
         <div class="login">
 
-            <form action="inscription_verif.php" method="post">
+            <form action="<?= ROOT_URL?>/../app/HTML/loginCaptcha/register/inscription_verif.php" method="post">
                 <div class="pseudo user_pass">
                     <span class="iconify" data-icon="codicon:account"></span>
 
@@ -117,4 +113,3 @@
 
 </body>
 
-</html>

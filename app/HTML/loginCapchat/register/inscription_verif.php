@@ -5,7 +5,7 @@ $secret = '6LeGbYcdAAAAADGRsng3vQiY5L57xBXuXhjjdUHu';
 $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 
 try {
-    $bdd = new PDO("mysql:host=localhost;dbname=dendo;charset=utf8", "root", "");
+    $bdd = new PDO("mysql:host=localhost;dbname=dendov2;charset=utf8", "root", "");
 } catch (PDOException $e) {
     die('Erreur : ' . $e->getMessage());
 }
@@ -67,41 +67,41 @@ if (!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['passwo
                                         'password' => $password,
                                         'ip' => $ip
                                     ));
-                                    header('Location:register.php?reg_err=success');
+                                    header('Location:register?reg_err=success');
                                     die();
                                 } else{
-                                    header('Location: register.php?reg_err=capchat');
+                                    header('Location: register?reg_err=capchat');
                                     die();
                                 }
 
                             }else{
-                                header('Location: register.php?reg_err=capchat');
+                                header('Location: register?reg_err=capchat');
                                 die();
                             }
 
 
                         }else {
-                            header('Location: register.php?reg_err=password_condition');
+                            header('Location: register?reg_err=password_condition');
                             die();
                         }
                     }else {
-                        header('Location: register.php?reg_err=password');
+                        header('Location: register?reg_err=password');
                         die();
                     }
                 } else {
-                    header('Location: register.php?reg_err=email');
+                    header('Location: register?reg_err=email');
                     die();
                 }
             } else {
-                header('Location: register.php?reg_err=email_length');
+                header('Location: register?reg_err=email_length');
                 die();
             }
         } else {
-            header('Location: register.php?reg_err=pseudo_length');
+            header('Location: register?reg_err=pseudo_length');
             die();
         }
     } else {
-        header('Location: register.php?reg_err=already');
+        header('Location: register?reg_err=already');
         die();
     }
 }

@@ -31,7 +31,7 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="<?= ROOT_URL?>/support">SUPPORT</a></li>
-                <li><a class="dropdown-item" href="#">FAQ*</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>/faq">FAQ</a></li>
                 <li><a class="dropdown-item" href="#">PAIEMENT ET EXPEDITION</a></li>
                 <li><a class="dropdown-item" href="<?= ROOT_URL?>/contact">CONTACT</a></li>
               </ul>
@@ -55,7 +55,7 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                <li><a class="dropdown-item" href="<?= ROOT_URL?>/deconnexion">Déconnexion</a></li>
             
               </ul>
             </div>
@@ -68,7 +68,7 @@
                 <span class="iconify" data-icon="ant-design:close-outlined"></span>
                 <span>FERMER</span>
             </div> -->
-      <a href="<?= ROOT_URL?>/home" class="header_logo"><img src="./assets/image/Main.png" alt=""></a>
+      <a href="<?= ROOT_URL?>/home" class="header_logo"><img src="<?= $logo?>" alt=""></a>
       <div class="header_menu icons_menu">
         
 
@@ -79,7 +79,7 @@
         </label>
 
         <span class="iconify" data-icon="bi:search"></span>
-        <span class="iconify" data-icon="codicon:account"></span>
+        <a href="<?= ROOT_URL?>/register"><span   class="iconify" data-icon="codicon:account"></span></a>
         <span class="iconify" data-icon="grommet-icons:shop"></span>
       </div>
     </div>

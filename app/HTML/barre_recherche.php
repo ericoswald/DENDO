@@ -12,7 +12,7 @@ if (isset($_GET['S']) and !empty($_GET['S'])) {
 
 <main>
     <div class="recherche">
-        <form method="GET">
+        <form method="GET" class="recherche_form" >
             <input class="barre" type="search" name="S" placeholder="Recherche d'un produit" style="text-align: center"><BR><BR>
             <input class="bouton_recherche" type="submit" name="envoyer" placeholder="Envoyez">
         </form>
@@ -23,7 +23,7 @@ if (isset($_GET['S']) and !empty($_GET['S'])) {
             while ($produit = $allproduits->fetch()) {
                 $id = $produit['id'];
                 ?>
-                <a class="" href="produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a>
+                <a class="recherche_produit" href="produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a>
                 <?php
             }
         } else {

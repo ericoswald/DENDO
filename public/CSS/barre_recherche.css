@@ -1,3 +1,9 @@
+/* formulaire de recherche */
+
+.recherche_form{
+    margin-bottom: 165px;
+}
+
 .recherche{
     position: relative!important;
     display: block!important;
@@ -12,6 +18,8 @@
     display: block!important;
     text-align: center!important;
     top: 150px !important;
+    margin-bottom: 200px;
+    color: black;
 
 
 }
@@ -25,8 +33,24 @@
 
 .bouton_recherche{
     border-radius: 20px!important;
-    background-color: white!important;
     width: 200px!important;
-    height: 30px!important;
+    background-color: black!important;
+    color: white!important;
+
+
 
 }
+
+.bouton_recherche:hover{
+    border: 0!important;
+
+}
+
+
+/* Produit trouvé */
+
+.recherche_produit{
+    color: black!important;
+}
+
+

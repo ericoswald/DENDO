@@ -13,7 +13,7 @@
 
         <div class="login">
 
-            <form action="<?= ROOT_URL?>/../app/HTML/loginCaptcha/register/inscription_verif.php" method="post">
+            <form action="<?= ROOT_URL?>/inscriptionTraitement" method="post">
                 <div class="pseudo user_pass">
                     <span class="iconify" data-icon="codicon:account"></span>
 

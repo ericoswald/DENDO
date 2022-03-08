@@ -293,7 +293,7 @@ class FrontController
     }
 
         try {
-            $bdd = new \PDO("mysql:host=localhost;dbname=dendov2;charset=utf8", "root", "");
+            $bdd = new \PDO("mysql:host=localhost;dbname=dendo;charset=utf8", "root", "");
 
         } catch (\PDOException $e) {
             die('Erreur : ' . $e->getMessage());
@@ -378,7 +378,7 @@ class FrontController
      session_start();
 
      try {
-         $bd = new \PDO('mysql:host=localhost;dbname=dendov2;', 'root', '');
+         $bd = new \PDO('mysql:host=localhost;dbname=dendo;', 'root', '');
      } catch (\Exception $e) {
          die("Erreur :" . $e->getMessage());
      }

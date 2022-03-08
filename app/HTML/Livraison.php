@@ -1,7 +1,6 @@
 <main>
     <div id="container">
 
-<<<<<<< HEAD
         .couleur_validation{
             background-color: lightgray;
         }
@@ -26,9 +25,6 @@
             text-align: center;
             text-decoration: underline;
         }
-=======
-        <h1>Formulaire de Livraison</h1>
->>>>>>> 61171596377990ef4a821cff3b40dc3fbce8687e
 
         <label for="nom"><b>Nom</b></label>
         <input type="text" placeholder="Veuillez saisir votre nom" name="nom">
@@ -45,7 +41,6 @@
         <label for="adresse"><b>Code postal</b></label>
         <input type="text" placeholder="Veuillez saisir votre code postal" name="adresse">
 
-<<<<<<< HEAD
     </style>
 </head>
 <body>
@@ -53,10 +48,6 @@
 <div id="bloc1">
 <form class="form_livraison" >
     <h1>Formulaire de Livraison</h1>
-=======
-        <label for="telephone"><b>Téléphone</b></label><br>
-        <input type="text" placeholder="Veuillez saisir votre numéro de téléphone" name="telephone"><br><br>
->>>>>>> 61171596377990ef4a821cff3b40dc3fbce8687e
 
         <input type="submit" id='submit' value='Confirmer mes informations'>
 

@@ -43,7 +43,6 @@ unset($_SESSION['aproduit'])
                     <h2 class="carousel_titre"><?= $product->nom; ?></h2>
                     <div class="carousel_categorie_velo"><?= $product->libelle; ?></div>
                     <div class="carousel_prix"><?= $product->prix; ?>€</div>
-                    <div class="carousel_prix"><?= $product->id; ?></div>
                     <div class="carousel_centre_bouton">
 
                         <a href="/app/HTML/redirection_produit.php?id=<?= $product->id; ?>">
@@ -65,7 +64,7 @@ unset($_SESSION['aproduit'])
                     <div class="carousel_categorie_velo"><?= $product->libelle; ?></div>
                     <div class="carousel_prix"><?= $product->prix; ?>€</div>
                     <div class="carousel_centre_bouton">
-                        <a href="/app/HTML/ajouter_produit.php?id=<?= $product->id; ?>">
+                        <a href="/app/HTML/redirection_produit.php?id=<?= $product->id; ?>">
                             <span class="carousel_button">EN SAVOIR PLUS</span>
                         </a>
                     </div>
@@ -85,7 +84,7 @@ unset($_SESSION['aproduit'])
                     <div class="carousel_categorie_velo"><?= $product->libelle; ?></div>
                     <div class="carousel_prix"><?= $product->prix; ?>€</div>
                     <div class="carousel_centre_bouton">
-                        <a href="/app/HTML/ajouter_produit.php?id=<?= $product->id; ?>">
+                        <a href="/app/HTML/redirection_produit.php?id=<?= $product->id; ?>">
                             <span class="carousel_button">EN SAVOIR PLUS</span>
                         </a>
                     </div>

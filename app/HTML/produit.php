@@ -7,7 +7,7 @@ require 'lien_panier.php';
                 if(empty($ids)){
                     $products = array();
                 }else{
-                    $products = $DB->query('SELECT * FROM article WHERE id IN ('.implode(',',$ids).')');
+                    $products = $DB->query('SELECT a.*, i.image FROM article a inner join image i ON a.id = i.id WHERE a.id IN ('.implode(',',$ids).')');
                 }
                 foreach($products as $product):
                     ?>
@@ -40,7 +40,7 @@ require 'lien_panier.php';
                 <label for="taille_roue2" class="produit_roue_2">29''</label>
             </div>
 
-            <div class="produit_velo"><img class="produit_taille_velo" src="/public/assets/image/velo1.png" alt="velo"/>
+            <div class="produit_velo"><img class="produit_taille_velo" src="/public/<?= $product->image; ?>"  alt="velo"/>
             </div>
 
             <div class="produit_acheter">

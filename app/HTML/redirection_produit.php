@@ -8,10 +8,9 @@ if(isset($_GET['id'])){
     }else{
         $aproduit->ajouter($produit[0]->id);
 
-        header('Location: /public/produit');
+        header('Location: /public/produit?id='.$_GET['id']);
         exit();
- 
-      
+
     }
 }else{
     echo "Vous n'avez pas sélectionné de produit";

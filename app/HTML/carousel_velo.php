@@ -1,7 +1,8 @@
 <?php
 require 'lien_panier.php';
+$test = serialize($_SESSION['panier']);
+unset($_SESSION['aproduit']);
 
-unset($_SESSION['aproduit'])
 ?>
 
 
@@ -36,7 +37,7 @@ unset($_SESSION['aproduit'])
                 <?php foreach ($products as $product): ?>
                 <li class="carousel_block">
                     <a href="">
-                        <img class="carousel_image" src="/public/<?= $product->image; ?>" alt="velo1"></a>
+                        <img class="carousel_image" src="/public/<?= $product->image; ?>"></a>
                     <h2 class="carousel_titre"><?= $product->nom; ?></h2>
                     <div class="carousel_categorie_velo"><?= $product->libelle; ?></div>
                     <div class="carousel_prix"><?= $product->prix; ?>€</div>
@@ -92,7 +93,7 @@ unset($_SESSION['aproduit'])
                 <?php endforeach ?>
             </div>
 
-
+<div><?php echo $test?></div>
 
             <!---->
             <!--            <li class="carousel_block vtt" id="vtt2">-->

@@ -74,6 +74,7 @@ border: 1px solid black;
   display: block;
   padding: 0px;
   font-size: initial;
+  border : white;
 }
 
 .input_panier input:hover{
@@ -89,3 +90,4 @@ border: 1px solid black;
   display: flex;
   justify-content: space-around;
 }
+

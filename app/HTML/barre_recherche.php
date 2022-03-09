@@ -23,7 +23,7 @@ if (isset($_GET['S']) and !empty($_GET['S'])) {
             while ($produit = $allproduits->fetch()) {
                 $id = $produit['id'];
                 ?>
-                <a class="recherche_produit" href="produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a>
+                <a class="recherche_produit" href="produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a><br>
                 <?php
             }
         } else {

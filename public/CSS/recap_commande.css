@@ -1,0 +1,71 @@
+.livraison_conteneur{
+    margin-bottom: 80px;
+}
+
+.commande {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: #373737;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+
+/* Concernant les informations personnelles (nom, prénom...) */
+
+.toute_info, .tout_lieu, .toute_autres_info {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 0 2px black;
+    border: 1px solid black;
+}
+
+.info, .titre_lieu, .titre_autre_info {
+    font-weight: bold;
+    margin: 0 20px 0 20px;
+}
+
+.marge {
+    margin-bottom: 10px;
+}
+
+
+.commande_personne {
+
+    justify-content: center;
+}
+
+
+.nom {
+    margin-right: 10px;
+}
+
+/*concernant l'adresse de livraison */
+
+
+/* bouton commander */
+
+.conteneur_commander{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bouton_commander{
+    color:white!important;
+    border:0!important;
+    background-color: #373737!important;
+
+}
+
+.bouton_commander:hover{
+    color:white!important;
+    border:0!important;
+}
+
+

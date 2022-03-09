@@ -1,20 +1,4 @@
 <?php
-$bdd = new PDO('mysql:host=localhost;dbname=dendo;', 'root', '');
-
-if (isset($_POST['article_titre'], $_POST['article_contenu'])) {
-    if (!empty($_POST['article_titre']) and !empty($_POST['article_contenu'])) {
-        $article_titre = htmlspecialchars($_POST['article_titre']);
-        $article_contenu = htmlspecialchars($_POST['article_contenu']);
-        $ins->execute(array($article_titre, $article_contenu));
-        $message = 'Votre articla a bien été pris en compte';
-
-    } else {
-        $message = 'Veuillez remplir tous les champs';
-    }
-}
-?>
-
-<?php
 
 $curl = curl_init();
 
@@ -41,11 +25,10 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 curl_close($curl);
 $php = json_decode($response);
-$token= $php->access_token;
+$token = $php->access_token;
 
 
-
-if(isset($token)) {
+if (isset($token)) {
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
@@ -86,9 +69,7 @@ if(isset($token)) {
     $id = $convert->id;
 
 
-
     curl_close($curl);
-
 
 
     $url = $convert->links[1]->href;
@@ -96,39 +77,64 @@ if(isset($token)) {
     header($url);
 
 
-
-
-
 }
-
 
 
 ?>
 
+<main class="livraison_conteneur">
 
-<main>
-<div class="couleur_validation"></div>
-    <h1 class="titre_validation">Vos commandes : </h1>
-    <hr width="100%">
-    <form method="POST">
-        <input type="text" name="article_titre" placeholder="titre"/><BR>
-        <textarea name="article_contenu" placeholder="Contenu de l'aricle"></textarea><BR>
+    <h1 class="commande">Récapitulatif de commande</h1>
 
-    </form>
-        <a href="https://www.sandbox.paypal.com/checkoutnow?token=<?= $id ?>" ><input type="submit" value="Envoyez l'article"/></a>
+    <div class="toute_info">
+        <div>1</div>
+        <div class="info">Vos informations:</div>
 
-    <div class="vertical">
-        <h2>Livraison</h2><BR>
-        <?= 'nom :' .$_POST["nom"].'<br>' ?>
-        <span><?= $product->id; ?></span>
-        <span><?= $product->nom; ?></span>
-        <span><?= $product->prix; ?></span>
-        <a href="Livraison.php">Enregistrement de mes données</a>
+        <div class="commande_personne">
+            <div class="nom marge">Nom: <?= $_POST["nom"] . '<br>' ?> </div>
+            <div class="prenom marge">Prénom: <?= $_POST["prenom"] . '<br>' ?></div>
+            <div class="prenom marge">Email: <?= $_POST["email"] . '<br>' ?></div>
+
+        </div>
+    </div>
+
+
+    <div class="tout_lieu">
+        <div>2</div>
+        <div class="titre_lieu">Adresse de livraison:</div>
+
+        <div class="lieu">
+            <div class="adresse marge">Adresse: <?= $_POST["adresse"] . '<br>' ?> </div>
+            <div class="adresse marge">Adresse de facturation: <?= $_POST["adresse_facturation"] . '<br>' ?> </div>
+            <div class="code_postale marge">Code Potale: <?= $_POST["codePostal"] . '<br>' ?></div>
+            <div class="ville">Ville: <?= $_POST["ville"] . '<br>' ?></div>
+            <div class="ville">Libelle: <?= $_POST["libelle"] . '<br>' ?></div>
+        </div>
+    </div>
+
+
+    <div class="toute_autres_info">
+        <div>3</div>
+        <div class="titre_autre_info">Autres informations:</div>
+
+        <div class="autre_info">
+            <div class="montant marge">Montant de la commande: €</div>
+            <div class="montant marge">Nom du/des produits: €</div>
+        </div>
+    </div>
+
+
+    <div class="conteneur_commander">
+        <a href="https://www.sandbox.paypal.com/checkoutnow?token=<?= $id ?>">
+            <input class="bouton_commander" type="submit" value="Commander"/>
+        </a>
     </div>
 
 </main>
 
-<?php if (isset($message)) {
-    echo $message;
-} ?>
+
+
+
+
+
 

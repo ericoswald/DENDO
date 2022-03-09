@@ -57,7 +57,9 @@
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre email" name="email">
 
         <label class="label_livraison"  for="adresse"><b>Adresse</b></label>
+
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre adresse" name="adresse">
+
 
         <label class="libelle"  for="libelle"><b>Libelle</b></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre Libelle" name="Libelle">

@@ -1,186 +1,86 @@
-/*html, body, div, span, applet, object, iframe,*/
-/*h1, h2, h3, h4, h5, h6,*/
-/*table, tr, th, td{*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  border: 0;*/
-/*  font-size: 100%;*/
-/*  font: inherit;*/
-/*  vertical-align: baseline;*/
-/*}*/
+.img_panier img{
+  max-width: 200px;
 
-
-.wrap {
-  width: 980px;
-  margin: 0 auto;
 }
 
+.block_panier{
+  background-color: grey;
+  width: 100%;
+  padding-top: 16%  ;
+  padding-bottom: 15%;
+  display: flex;
+  justify-content: center;
+}
 
-.titre_ligne {
+.block_panier_mid{
+  width: 70%;
   background-color: white;
+border: 1px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
-.checkout .proceed, .checkout input[type=submit] {
 
+.tableau1 div{
+  border: solid 1px black;
 
-  background-position: 0 0;
-  width: 177px;
-  height: 50px;
+}
+
+.tableau1{
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  display: flex;
+  width: 100%;
+}
+.nom_produit{
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.produit{
+
+  justify-content: center;
+
+}
+
+.quantité_produit, .delete, .prix_produit{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prix_tva{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nom_produit span{
+  margin-left: 30px
+}
+
+.tableau1 .nom_produit, .quantité_produit, .prix_produit, .prix_tva, .delete{
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+  border-bottom: solid 2px black;
+}
+
+.input_panier input {
+  background-color: white;
+  color: black;
+  height: auto;
   display: block;
-  float: right;
-  text-align: center;
-  text-decoration: none;
-  line-height: 47px;
-  color: #FFF;
-  background: grey;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-right: 5px;
+  padding: 0px;
+  font-size: initial
 }
 
-.checkout .title {
-  height: 80px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  background: grey;
+.fin_panier a {
+  color:black;
+
 }
-
-.checkout .title h2 {
-  height: 80px;
-  line-height: 80px;
-  font-size: 30px;
-  color: white;
-  width: 464px;
-  float: left;
+.fin_panier{
+  display: flex;
+  justify-content: space-around;
 }
-
-.checkout .table {
-  background: grey;
-  border-bottom: 1px solid grey;
-}
-
-.checkout .table .titre_ligne {
-  height: 37px;
-  line-height: 37px;
-  border-bottom: 1px solid grey;
-  border-left: 1px solid grey;
-  padding-left: 170px;
-  color: grey;
-  font-size: 14px;
-}
-
-.checkout .table .titre_ligne span {
-  float: left;
-}
-
-.checkout .table .titre_ligne span.nom_produit {
-  width: 338px;
-  display: block;
-}
-
-.checkout .table .titre_ligne span.prix_produit {
-  width: 130px;
-  display: block;
-}
-
-.checkout .table .titre_ligne span.quantity {
-  width: 130px;
-  display: block;
-}
-
-.checkout .table .titre_ligne span.prix_tva {
-  width: 130px;
-  display: block;
-}
-
-.checkout .table .titre_ligne span.delete {
-  width: 79px;
-  display: block;
-  border-right: 1px solid grey;
-  border-left: 1px solid grey;
-  text-align: center;
-}
-
-.checkout .table .row.grey {
-  background: #FFF;
-}
-
-.checkout .table .row {
-  overflow: hidden;
-  background: #FFF;
-  height: 81px;
-  line-height: 81px;
-  border-bottom: 1px solid grey;
-  border-left: 1px solid grey;
-}
-
-.checkout .table .row a.img {
-  width: 168px;
-  margin-top: 15px;
-  display: block;
-  float: left;
-  text-align: center;
-}
-
-.checkout .table .row span {
-  float: left;
-  font-size: 12px;
-  color: grey;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
-}
-
-.checkout .table .row span.nom_produit {
-  width: 340px;
-  display: block;
-}
-
-.checkout .table .row span.prix_produit {
-  width: 130px;
-  display: block;
-}
-
-.checkout .table .row span.quantité_produit {
-  width: 57px;
-  display: block;
-  text-align: center;
-  padding-right: 73px;
-}
-
-.checkout .table .row span.quantité_produit input {
-  height: 33px;
-  width: 20px;
-  border: 1px solid grey;
-  background: #FFF;
-}
-
-.checkout .table .row span.prix_tva {
-  width: 130px;
-  display: block;
-}
-
-.checkout .table .row span.delete {
-  width: 79px;
-  display: block;
-  border-right: 1px solid grey;
-  border-left: 1px solid grey;
-  text-align: center;
-}
-
-.checkout .table .rowtotal {
-  height: 57px;
-  line-height: 57px;
-  background: #FFF;
-  border-right: 1px solid grey;
-  border-left: 1px solid grey;
-  border-bottom: 1px solid grey;
-  color: #404040;
-  font-size: 16px;
-}
-
-.checkout .table .rowtotal .total {
-  color: #323b49;
-  font-size: 16px;
-}
-
-
-

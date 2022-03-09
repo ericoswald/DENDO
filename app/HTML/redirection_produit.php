@@ -6,7 +6,7 @@ if(isset($_GET['id'])){
     if(empty($produit)){
         echo "Ce produit n'existe pas";
     }else{
-        $aproduit->add($produit[0]->id);
+        $aproduit->ajouter($produit[0]->id);
 
         header('Location: /public/produit');
         exit();

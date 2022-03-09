@@ -47,9 +47,7 @@ require 'lien_panier.php';
             </div>
 
 <div>
-    <?php
-    var_dump($_SESSION['user']);
-    ?>
+
         </div>
         </form>
     </div>

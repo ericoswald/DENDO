@@ -21,7 +21,7 @@
 }
 
 .input_livraison[type=text], input[type=password] {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -36,8 +36,16 @@
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    width: 100%;
+    width: 21%;
+
 }
+
+.input_bouton[type=submit]:hover {
+    background-color: #373737!important;
+    color:white;
+    border: 0!important;
+}
+
 
 .label_livraison{
     color: white;

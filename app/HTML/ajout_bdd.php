@@ -8,7 +8,7 @@ $_SESSION['panier'] = [];
 
 //foreach($_SESSION['panier'] as $id_article => $quantite_article){
 //    echo $id_article;
-    var_dump($_SESSION['panier']);
+//    var_dump($_SESSION['panier']);
 //    $_SESSION['panier'] = [$id_article, $quantite_article, $_SESSION['user']];
 //    var_dump($_SESSION['panier']);
 //}

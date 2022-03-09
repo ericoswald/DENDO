@@ -30,7 +30,7 @@ require 'lien_panier.php';
 
             </div>
 
-            <div class="produit_taille_roue">Choisissez votre taille de roue</div>
+            <div class="produit_taille_roue">Choisissez votre taille de vélo</div>
 
 
             <div class="produit_selection_taille">

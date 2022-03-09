@@ -1,4 +1,6 @@
 <?php
+unset($_SESSION['aproduit']);
+
 $bdd = new PDO('mysql:host=localhost;dbname=dendo;', 'root', '');
 $allproduits = $bdd->query('SELECT * FROM article ORDER BY id  DESC');
 if (isset($_GET['S']) and !empty($_GET['S'])) {
@@ -23,7 +25,7 @@ if (isset($_GET['S']) and !empty($_GET['S'])) {
             while ($produit = $allproduits->fetch()) {
                 $id = $produit['id'];
                 ?>
-                <a class="recherche_produit" href="produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a>
+                <a class="recherche_produit" href="/app/HTML/redirection_produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a>
                 <?php
             }
         } else {

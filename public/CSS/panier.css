@@ -73,7 +73,8 @@ border: 1px solid black;
   height: auto;
   display: block;
   padding: 0px;
-  font-size: initial
+  font-size: initial;
+  border : white;
 }
 
 .fin_panier a {
@@ -84,3 +85,4 @@ border: 1px solid black;
   display: flex;
   justify-content: space-around;
 }
+

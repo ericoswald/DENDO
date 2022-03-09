@@ -41,13 +41,15 @@ require 'lien_panier.php';
 
                 <div class="input_panier"><input type="submit" value="Recalculer"></div>
 
-                <a href="/app/HTML/">
+                <a href="/app/html/ajout_bdd.php">
                     <span>Commander</span>
                 </a>
             </div>
 
-
-
+<div>
+    <?php
+    var_dump($_SESSION['user']);
+    ?>
         </div>
         </form>
     </div>

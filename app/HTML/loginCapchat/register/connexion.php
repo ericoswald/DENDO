@@ -11,7 +11,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     $password = htmlspecialchars($_POST['password']);
 
 
-    $query = 'SELECT pseudo,email,password FROM utilisateur WHERE email = ?';
+    $query = 'SELECT id,pseudo,email,password FROM utilisateur WHERE email = ?';
     $check = $bd->prepare($query);
     $check->execute(array($email));
 
@@ -26,7 +26,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
             if (password_verify($password, $data['password'])) {
 
-                $_SESSION['user'] = $data['pseudo'];
+                $_SESSION['user'] = $data['id'];
                 header('Location:home');
                 die();
 

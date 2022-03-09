@@ -3,7 +3,7 @@ class panier{
 
 	private $DB;
 
-	public function __construct($DB){
+	public function     __construct($DB){
 		if(!isset($_SESSION)){
 			session_start();
 		}

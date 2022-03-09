@@ -47,36 +47,36 @@
 <form class="form_livraison" >
     <h1>Formulaire de Livraison</h1>
 
-        <label class="label_livraison" for="nom"><b>Nom</b></label>
+        <label class="label_livraison" for="nom"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre nom" name="nom">
 
-        <label class="label_livraison"  for="prenom"><b>Prénom</b></label>
+        <label class="label_livraison"  for="prenom"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre prénom" name="prenom">
 
-        <label class="label_livraison"  for="email"><b>email</b></label>
+        <label class="label_livraison"  for="email"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre email" name="email">
 
-        <label class="label_livraison"  for="adresse"><b>Adresse</b></label>
+        <label class="label_livraison"  for="adresse"></label>
 
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre adresse" name="adresse">
 
 
-        <label class="libelle"  for="libelle"><b>Libelle</b></label>
+        <label class="libelle"  for="libelle"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre Libelle" name="Libelle">
 
-        <label class="label_livraison"  for="adresse_complementaire"><b>Adresse complémentaire</b></label>
+        <label class="label_livraison"  for="adresse_complementaire"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre adresse complémentaire" name="adresse_complementaire">
  
-        <label class="label_livraison" for="ville"><b>Ville</b></label>
+        <label class="label_livraison" for="ville"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre ville" name="ville">
 
-        <label class="label_livraison" for="pays"><b>Pays</b></label>
+        <label class="label_livraison" for="pays"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre pays" name="pays">
 
-        <label class="label_livraison" for="adresse_facturation"><b>Adresse de facturation</b></label>
+        <label class="label_livraison" for="adresse_facturation"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre adresse de facturation" name="adresse_facturation">
 
-        <label class="label_livraison"  for="codePostal"><b>Code postal</b></label>
+        <label class="label_livraison"  for="codePostal"></label>
         <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre code postal" name="codePostal">
 
 

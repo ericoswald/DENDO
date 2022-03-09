@@ -73,7 +73,12 @@ border: 1px solid black;
   height: auto;
   display: block;
   padding: 0px;
-  font-size: initial
+  font-size: initial;
+}
+
+.input_panier input:hover{
+  border: 1px solid white!important;
+  color: white!important;
 }
 
 .fin_panier a {

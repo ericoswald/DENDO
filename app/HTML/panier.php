@@ -28,16 +28,16 @@ require 'lien_panier.php';
                 <div class="tableau1">
 
                     <span class="nom_produit"><a class="img_panier"> <img src="/public/<?= $produit->image; ?>"></a><span><?= $produit->nom; ?></span></span>
-                    <span class="quantité_produit"><input type="number" name="panier[quantité][<?= $produit->id; ?>]" value="<?= $_SESSION['panier'][$produit->id]; ?>"></span>
-                    <span class="prix_produit"><?= number_format($produit->prix * $_SESSION['panier'][$produit->id],3,',',' ') ; ?> €</span>
-                    <span class="prix_tva"><?= number_format($produit->prix * 1.196 * $_SESSION['panier'][$produit->id],3,',',' '); ?> €</span>
+                    <span class="quantité_produit"><input type="number" min="0" max="100" name="panier[quantité][<?= $produit->id; ?>]" value="<?= $_SESSION['panier'][$produit->id]; ?>"></span>
+                    <span class="prix_produit"><?= number_format($produit->prix * $_SESSION['panier'][$produit->id],0,',',' ') ; ?> €</span>
+                    <span class="prix_tva"><?= number_format($produit->prix * 1.196 * $_SESSION['panier'][$produit->id],0,',',' '); ?> €</span>
                     <span class="delete">
 					<a href="panier?delPanier=<?= $produit->id; ?>" class="del"><img src="../../public/assets/image/del.png "></a>
 				</span>
                 </div>
             <?php endforeach; ?>
             <div class="fin_panier">
-                <div> Prix Total : <?= number_format($panier->total() * 1.196,2,',',' '); ?> € </div>
+                <div> Prix Total : <?= number_format($panier->total() * 1.196,0,',',' '); ?> € </div>
 
                 <div class="input_panier"><input type="submit" value="Recalculer"></div>
 

@@ -26,7 +26,7 @@ if (isset($_GET['S']) and !empty($_GET['S'])) {
                 $id = $produit['id'];
                 ?>
 
-                <a class="recherche_produit" href="/app/HTML/redirection_produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a>
+                <a class="recherche_produit" href="/app/HTML/redirection_produit.php?id=<?= $id ?>"><?= $produit['nom']; ?></a><br>
 
                 <?php
             }

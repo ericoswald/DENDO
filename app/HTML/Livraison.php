@@ -36,7 +36,7 @@ if (empty($insertion)) {
 
 
 <main>
-    <body>
+
     <div id="couleur_livraison"></div>
     <div id="bloc1">
         <form class="form_livraison" action="recap_commande" method="POST">
@@ -90,5 +90,5 @@ if (empty($insertion)) {
 
         </form>
     </div>
-    </body>
+
 </main>

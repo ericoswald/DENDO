@@ -38,10 +38,13 @@ require 'lien_panier.php';
             <?php endforeach; ?>
             <div class="fin_panier">
                 <div> Prix Total : <?= number_format($panier->total() * 1.196,0,',',' '); ?> € </div>
+                <?php $_SESSION['total'] = $panier->total() * 1.196;
+                ?>
+
 
                 <div class="input_panier"><input type="submit" value="Recalculer"></div>
 
-                <a href="/app/html/ajout_bdd.php">
+                <a href="/public/livraison">
                     <span>Commander</span>
                 </a>
             </div>

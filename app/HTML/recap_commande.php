@@ -1,5 +1,13 @@
 <?php
 
+require 'ajout_panier.php';
+
+
+$total = $_SESSION['total'];
+$total = intval($total);
+
+
+
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -44,15 +52,15 @@ if (isset($token)) {
         CURLOPT_POSTFIELDS => '{
                     "intent": "CAPTURE",
                     "application_context": {
-                        "return_url": "http://dendo.localhost.fr/paiement-verif/",
-                        "cancel_url": "http://dendo.localhost.fr/paiement-verif/"
+                        "return_url": "http://dendo.fr/public/validation",
+                        "cancel_url": "http://dendo.fr/public/validation"
                     },
                     "purchase_units": [
                         {
                             "reference_id": "test",
                             "amount": {
                                 "currency_code": "EUR",
-                                "value": "80"
+                                "value": ' . $total . '
                             }
                         }
                     ]
@@ -73,6 +81,7 @@ if (isset($token)) {
 
 
     $url = $convert->links[1]->href;
+    var_dump($url);
 
     header($url);
 
@@ -106,7 +115,7 @@ if (isset($token)) {
         <div class="lieu">
             <div class="adresse marge">Adresse: <?= $_POST["adresse"] . '<br>' ?> </div>
             <div class="adresse marge">Adresse de facturation: <?= $_POST["adresse_facturation"] . '<br>' ?> </div>
-            <div class="code_postale marge">Code Potale: <?= $_POST["codePostal"] . '<br>' ?></div>
+            <div class="code_postale marge">Code Postale: <?= $_POST["codePostal"] . '<br>' ?></div>
             <div class="ville">Ville: <?= $_POST["ville"] . '<br>' ?></div>
             <div class="ville">Libelle: <?= $_POST["libelle"] . '<br>' ?></div>
         </div>
@@ -118,7 +127,8 @@ if (isset($token)) {
         <div class="titre_autre_info">Autres informations:</div>
 
         <div class="autre_info">
-            <div class="montant marge">Montant de la commande: €</div>
+
+            <div class="montant marge">Montant de la commande: <?= $total ?>€</div>
             <div class="montant marge">Nom du/des produits: €</div>
         </div>
     </div>

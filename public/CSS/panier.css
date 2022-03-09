@@ -4,37 +4,45 @@
 }
 
 .block_panier{
-  background-color: red;
+  background-color: grey;
   width: 100%;
-  margin-top: 100px;
+  padding-top: 16%  ;
+  padding-bottom: 15%;
   display: flex;
   justify-content: center;
 }
 
 .block_panier_mid{
   width: 70%;
-  background-color: grey;
+  background-color: white;
+border: 1px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
-.tableau1{
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
-  display: flex;
-width: 100%;
-}
 
 .tableau1 div{
   border: solid 1px black;
 
 }
 
+.tableau1{
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  display: flex;
+  width: 100%;
+}
 .nom_produit{
   width: 45%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+.produit{
 
+  justify-content: center;
+
+}
 
 .quantité_produit, .delete, .prix_produit{
   width: 10%;
@@ -51,4 +59,28 @@ width: 100%;
 
 .nom_produit span{
   margin-left: 30px
+}
+
+.tableau1 .nom_produit, .quantité_produit, .prix_produit, .prix_tva, .delete{
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+  border-bottom: solid 2px black;
+}
+
+.input_panier input {
+  background-color: white;
+  color: black;
+  height: auto;
+  display: block;
+  padding: 0px;
+  font-size: initial
+}
+
+.fin_panier a {
+  color:black;
+
+}
+.fin_panier{
+  display: flex;
+  justify-content: space-around;
 }

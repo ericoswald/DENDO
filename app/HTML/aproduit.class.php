@@ -13,7 +13,7 @@ class aproduit{
         $this->DB = $DB;
     }
 
-    public function add($product_id){
+    public function ajouter($product_id){
         if(isset($_SESSION['aproduit'][$product_id])){
             $_SESSION['aproduit'][$product_id];
             unset($_SESSION['aproduit'][$product_id]);

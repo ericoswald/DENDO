@@ -6,7 +6,7 @@ if(isset($_GET['id'])){
     if(empty($article)){
         echo "Ce produit n'existe pas";
     }else{
-        $panier->add($article[0]->id);
+        $panier->ajouter($article[0]->id);
 
         header('Location: /public/panier');
         exit();

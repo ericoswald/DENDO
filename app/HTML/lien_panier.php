@@ -6,4 +6,4 @@ require 'aproduit.class.php';
 $DB = new DB();
 $panier = new panier($DB);
 $aproduit = new aproduit($DB);
-$abdd = new abdd($DB);
+//$abdd = new abdd($DB);

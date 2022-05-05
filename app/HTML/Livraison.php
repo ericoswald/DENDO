@@ -51,7 +51,7 @@ if (empty($insertion)) {
                    name="prenom">
 
             <label class="label_livraison" for="email"></label>
-            <input class="input_livraison" type="text" required="required" placeholder="Veuillez saisir votre email"
+            <input class="input_livraison" type="email" required="required" placeholder="Veuillez saisir votre email"
                    name="email">
 
             <label class="label_livraison" for="adresse"></label>

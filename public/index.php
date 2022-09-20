@@ -29,6 +29,10 @@ if (isset($_GET['p'])) {
     $p = 'home';
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ab7f9da6e323503e90cca408d4829e2835574c45
 $frontController = new \App\Controller\FrontController();
 if (method_exists($frontController, $p)) {
     $content = $frontController->$p();

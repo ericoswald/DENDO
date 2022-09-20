@@ -58,8 +58,8 @@ class DB
 {
 
     private $host = 'localhost';
-    private $username = 'root';
-    private $password = '';
+    private $username = 'web';
+    private $password = 'web1234';
     private $database = 'dendo';
     private $db;
 

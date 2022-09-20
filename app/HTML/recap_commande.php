@@ -81,7 +81,7 @@ if (isset($token)) {
 
 
     $url = $convert->links[1]->href;
-    var_dump($url);
+
 
     header($url);
 

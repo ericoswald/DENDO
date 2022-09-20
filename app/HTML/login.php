@@ -43,7 +43,7 @@
             }
         }
         ?>
-        <form action="<?= ROOT_URL?>/connexion" method="post">
+        <form action="connexion" method="post">
             <div class="username user_pass">
                 <span class="iconify" data-icon="codicon:account"></span>
 

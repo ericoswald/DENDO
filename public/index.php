@@ -6,20 +6,28 @@ require '../app/Autoloader.php';
 
 include('./../setEnv.php');
 
+
+$tabPage = ["home", "register", "carousel_velo", "contact", "equipement", "lien", "produit", "support", "faq","l404",
+    "Livraison", "validation", "barre_recherche", "deconnexion", "login", "panier", "recap_commande", "connexion", "inscriptionTraitement"];
+
 if (isset($_GET['p'])) {
-    $p = htmlspecialchars($_GET['p']);
+    $pageExiste = false;
+    foreach ($tabPage as $page) {
+        if ($page == $_GET['p']) {
+            $pageExiste = true;
+        }
+    }
+
+    if ($pageExiste) {
+        $p = htmlspecialchars($_GET['p']);
+    } else {
+        $p ='l404';
+        header('Location:l404');
+    }
+
 } else {
     $p = 'home';
 }
-
-
-
-//TODO
-// 1. refactoriser pour éviter la succession de if. Deux possibilités :
-// * Vérifier que le fichier existe dans le dossier HTML (nécessite de déplacer register.php)
-// * maintenir un tableau de valeurs possibles de $p
-// - Que ce passe-t-il si $p ne match aucun cas ?
-// 2. Ne pas placer vos fichiers PHP dans HTML, mais dans app
 
 $frontController = new \App\Controller\FrontController();
 if (method_exists($frontController, $p)) {

@@ -275,6 +275,12 @@ class FrontController
         return ob_get_clean();
     }
 
+    public function l404()
+    {
+        ob_start();
+        require ROOT_PROJECT . '/app/HTML/l404.php';
+        return ob_get_clean();
+    }
 
 
     public function inscriptionTraitement()
@@ -285,29 +291,29 @@ class FrontController
         $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 
         function verifMotDePasse(string $mdp)
-    {
-        if (strlen($mdp) >= 8) {
-            $minCarac = false;
-            $majCarac = false;
-            $specialCarac = false;
-            $special = ["!", "*", "#", "$", "&"];
+        {
+            if (strlen($mdp) >= 8) {
+                $minCarac = false;
+                $majCarac = false;
+                $specialCarac = false;
+                $special = ["!", "*", "#", "$", "&"];
 
-            for ($i = 0; $i < strlen($mdp); $i++) {
-                if (ctype_lower($mdp[$i])) {
-                    $minCarac = true;
-                }
-                if (ctype_upper($mdp[$i])) {
-                    $majCarac = true;
-                }
-                foreach ($special as $caractere) {
-                    if ($mdp[$i] == $caractere) {
-                        $specialCarac = true;
+                for ($i = 0; $i < strlen($mdp); $i++) {
+                    if (ctype_lower($mdp[$i])) {
+                        $minCarac = true;
+                    }
+                    if (ctype_upper($mdp[$i])) {
+                        $majCarac = true;
+                    }
+                    foreach ($special as $caractere) {
+                        if ($mdp[$i] == $caractere) {
+                            $specialCarac = true;
+                        }
                     }
                 }
             }
+            return $minCarac && $majCarac && $specialCarac;
         }
-        return $minCarac && $majCarac && $specialCarac;
-    }
 
         try {
             $bdd = new \PDO("mysql:host=localhost;dbname=dendo;charset=utf8", "root", "");
@@ -339,6 +345,7 @@ class FrontController
                                     $password = password_hash($password, PASSWORD_BCRYPT, $cost);
 
                                     $ip = $_SERVER['REMOTE_ADDR'];
+
                                     if (isset($_POST['g-recaptcha-response'])) {
                                         $resp = $recaptcha->verify($_POST['g-recaptcha-response']);
                                         if ($resp->isSuccess()) {
@@ -391,7 +398,7 @@ class FrontController
         }
 
     }
- public function connexion(){
+    public function connexion(){
      session_start();
 
      try {
@@ -428,7 +435,7 @@ class FrontController
          } else header('Location:login?login_err=already');
 
 
-     }else header('Location:login');
+        }else header('Location:');
  }
 
 }
